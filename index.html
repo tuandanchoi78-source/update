@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG | MST: 1301102656 | Hệ Thống Quản Trị & Đặt Xe</title>
+    <meta name="description" content="CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG (LE HOANG LOGISTICS) - MST: 1301102656 - Giám đốc: Lê Thanh Nhã. Chuyên vận tải hàng hóa, xe đầu kéo gắn cẩu, cơ khí xây dựng khu vực Miền Nam. Liên hệ: 0907353533 - 0903052533.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        lhBlue: '#0022EE',
+                        lhRed: '#E60000',
+                        lhGreen: '#008A00',
+                        lhDark: '#0F172A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-display {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Hero Truck Background (image_4e7f48.jpg) with dark overlay for crisp text legibility */
+        .hero-truck-bg {
+            background-color: #0f172a;
+            background-image: 
+                linear-gradient(to right, rgba(10, 18, 36, 0.92) 0%, rgba(10, 18, 36, 0.76) 52%, rgba(10, 18, 36, 0.58) 100%),
+                var(--truck-bg-url, url('image_4e7f48.jpg'));
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            .hero-truck-bg {
+                background-attachment: scroll;
+                background-image: 
+                    linear-gradient(to bottom, rgba(10, 18, 36, 0.90) 0%, rgba(10, 18, 36, 0.80) 60%, rgba(10, 18, 36, 0.94) 100%),
+                    var(--truck-bg-url, url('image_4e7f48.jpg'));
+            }
+        }
+
+        /* Secondary Parallax Banner using the Truck Image */
+        .parallax-truck-section {
+            background-color: #1e293b;
+            background-image: 
+                linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(0, 34, 238, 0.84) 100%),
+                var(--truck-bg-url, url('image_4e7f48.jpg'));
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Pulse animation for call & notification buttons */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.97); box-shadow: 0 0 0 0 rgba(230, 0, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(230, 0, 0, 0); }
+            100% { transform: scale(0.97); box-shadow: 0 0 0 0 rgba(230, 0, 0, 0); }
+        }
+        .pulse-btn {
+            animation: pulse-ring 2s infinite;
+        }
+
+        /* Glassmorphism cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+        }
+
+        .glass-white {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Custom scrollbar for admin tables */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-lhBlue selection:text-white">
+
+    <!-- SVG DEFINITIONS FOR EXACT LOGO FALLBACK (Matches image_4e713c.png 100%) -->
+    <svg class="hidden" aria-hidden="true">
+        <symbol id="le-hoang-logo-graphic" viewBox="0 0 500 520">
+            <rect width="500" height="520" rx="24" fill="#ffffff"/>
+            <clipPath id="circle-clip">
+                <circle cx="250" cy="215" r="192"/>
+            </clipPath>
+            <g clip-path="url(#circle-clip)">
+                <polygon points="15,215 348,48 485,220 485,236 346,62 15,229" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2.5"/>
+                <polygon points="94,340 174,320 151,405 80,360" fill="#008A00"/>
+                <path d="M 165,45 Q 200,32 236,30 L 208,142 Q 198,185 242,178 L 315,158 L 291,256 Q 282,238 255,244 L 104,285 Z" fill="#FF0000"/>
+                <polygon points="346,52 406,86 335,392 264,404" fill="#008A00"/>
+            </g>
+            <circle cx="250" cy="215" r="194" fill="none" stroke="#0018FF" stroke-width="14"/>
+            <text x="250" y="446" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="33" fill="#000000" letter-spacing="0.5">LE HOANG LOGISTICS</text>
+            <text x="250" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="25.5" fill="#000000">Mr. NHA: 0907.35.35.33, 0903.052.533</text>
+            <text x="250" y="509" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="23" fill="#000000" letter-spacing="1">GỬI TRỌN NIỀM TIN</text>
+        </symbol>
+
+        <symbol id="le-hoang-emblem-only" viewBox="0 0 430 430">
+            <circle cx="215" cy="215" r="205" fill="#ffffff"/>
+            <clipPath id="emblem-clip">
+                <circle cx="215" cy="215" r="192"/>
+            </clipPath>
+            <g clip-path="url(#emblem-clip)">
+                <polygon points="-20,215 313,48 450,220 450,236 311,62 -20,229" fill="#e2e8f0" stroke="#94a3b8" stroke-width="3"/>
+                <polygon points="59,340 139,320 116,405 45,360" fill="#008A00"/>
+                <path d="M 130,45 Q 165,32 201,30 L 173,142 Q 163,185 207,178 L 280,158 L 256,256 Q 247,238 220,244 L 69,285 Z" fill="#FF0000"/>
+                <polygon points="311,52 371,86 300,392 229,404" fill="#008A00"/>
+            </g>
+            <circle cx="215" cy="215" r="194" fill="none" stroke="#0018FF" stroke-width="16"/>
+        </symbol>
+    </svg>
+
+    <!-- ===================================================================== -->
+    <!-- SYSTEM ROUTER TOP BAR: ĐỊNH TUYẾN ĐƯỜNG DẪN "/" VÀ "/admin"           -->
+    <!-- ===================================================================== -->
+    <div class="bg-slate-950 text-white border-b border-slate-800 sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-2">
+            <!-- Left: Route Switcher (/ vs /admin) + Simulated Address Path -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <div class="flex items-center bg-slate-900 p-1 rounded-xl border border-slate-800">
+                    <button id="btn-mode-public" onclick="navigateToRoute('/')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-1.5 bg-lhBlue text-white shadow">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Trang Chủ (/)</span>
+                    </button>
+                    <button id="btn-mode-admin" onclick="navigateToRoute('/admin')" class="px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-2 text-slate-300 hover:text-white relative">
+                        <i class="fa-solid fa-user-shield text-amber-400"></i>
+                        <span>Quản Trị (/admin)</span>
+                        <span id="top-new-orders-badge" class="bg-lhRed text-white text-[11px] font-extrabold px-2 py-0.5 rounded-full animate-pulse">
+                            0 mới
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Visual URL Path Indicator -->
+                <div class="hidden xl:flex items-center gap-2 bg-slate-900/90 border border-slate-800 px-3 py-1.5 rounded-lg text-xs font-mono text-slate-400">
+                    <i class="fa-solid fa-lock text-lhGreen text-[10px]"></i>
+                    <span>lehoanglogistics.vn<strong id="current-route-badge" class="text-amber-400 font-bold">/</strong></span>
+                </div>
+            </div>
+
+            <!-- Right: Auth Status, Live Sync & Quick Actions -->
+            <div class="flex items-center gap-2 sm:gap-3 ml-auto text-xs">
+                <div id="top-admin-session-pill" class="hidden sm:flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">
+                    <span id="auth-status-dot" class="w-2 h-2 rounded-full bg-slate-500"></span>
+                    <span id="auth-status-text" class="text-slate-300 font-semibold">Chưa đăng nhập /admin</span>
+                </div>
+                <button onclick="openImageCustomizer()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-2.5 py-1.5 rounded-lg border border-slate-700 transition flex items-center gap-1.5 font-semibold" title="Tải ảnh xe hoặc logo từ thiết bị">
+                    <i class="fa-solid fa-camera text-sky-400"></i>
+                    <span class="hidden sm:inline">Đổi Ảnh</span>
+                </button>
+                <a href="tel:0907353533" class="hidden md:inline-flex items-center gap-1.5 bg-lhRed/90 hover:bg-lhRed text-white px-3 py-1.5 rounded-lg font-bold transition">
+                    <i class="fa-solid fa-phone-volume"></i> 0907.35.35.33
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 1: GIAO DIỆN TRANG CHỦ KHÁCH HÀNG (ROUTE: "/")                   -->
+    <!-- ===================================================================== -->
+    <div id="public-website-view" class="block">
+
+        <!-- LIVE CMS ANNOUNCEMENT BANNER (Editable from Admin) -->
+        <div id="cms-announcement-bar" class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 py-2 px-4 font-bold text-xs sm:text-sm shadow-sm">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                    <span class="bg-slate-950 text-amber-400 text-[10px] font-black uppercase px-2 py-0.5 rounded">THÔNG BÁO MỚI</span>
+                    <span id="cms-announcement-text">Đội xe đầu kéo gắn cẩu Fassi 215 (71C-044.91) đang sẵn sàng nhận chuyến cẩu & vận tải khắp khu vực Miền Nam. Liên hệ GĐ Lê Thanh Nhã: 0907.35.35.33!</span>
+                </div>
+                <a href="#bao-gia" class="underline font-extrabold hover:text-lhRed shrink-0">Đặt chuyến ngay →</a>
+            </div>
+        </div>
+
+        <!-- MAIN HEADER -->
+        <header id="navbar" class="glass-white shadow-sm border-b border-slate-200/80 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <!-- Brand Logo + Company Name -->
+                    <a href="#trang-chu" class="flex items-center gap-3 group">
+                        <div class="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden bg-white shadow-sm border border-slate-200 flex items-center justify-center shrink-0">
+                            <img src="image_4e713c.png" alt="Logo Công Ty TNHH Cơ Khí Xây Dựng Vận Tải Lê Hoàng" class="custom-logo-img w-full h-full object-contain p-0.5" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                            <svg class="w-12 h-12 hidden"><use href="#le-hoang-emblem-only"></use></svg>
+                        </div>
+                        <div>
+                            <span class="block text-[10px] sm:text-xs font-extrabold tracking-wider text-lhBlue uppercase">CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI</span>
+                            <div class="flex items-baseline gap-2">
+                                <span class="font-display font-black text-lg sm:text-2xl text-slate-900 tracking-tight group-hover:text-lhRed transition">LÊ HOÀNG</span>
+                                <span class="text-lhGreen text-xs sm:text-sm font-extrabold uppercase">LOGISTICS</span>
+                            </div>
+                            <span class="block text-[11px] font-semibold text-slate-500">MST: <strong class="cms-tax-id text-slate-800">1301102656</strong> • <em id="cms-slogan-header">"Gửi Trọn Niềm Tin"</em></span>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation Links -->
+                    <nav class="hidden lg:flex items-center space-x-6 font-semibold text-slate-700 text-sm">
+                        <a href="#trang-chu" class="hover:text-lhBlue transition py-2">Trang Chủ</a>
+                        <a href="#gioi-thieu" class="hover:text-lhBlue transition py-2">Giới Thiệu & Pháp Lý</a>
+                        <a href="#doi-xe-truc-tuyen" class="hover:text-lhBlue transition py-2 flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-lhGreen"></span> Đội Xe Sẵn Sàng
+                        </a>
+                        <a href="#dich-vu" class="hover:text-lhBlue transition py-2">Dịch Vụ Miền Nam</a>
+                        <a href="#bao-gia" class="hover:text-lhBlue transition py-2">Báo Giá / Đặt Xe</a>
+                        <a href="#lien-he" class="hover:text-lhBlue transition py-2">Bản Đồ</a>
+                        <a href="#/admin" onclick="navigateToRoute('/admin'); return false;" class="text-xs font-extrabold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-1.5 rounded-lg transition flex items-center gap-1">
+                            <i class="fa-solid fa-lock"></i> /admin
+                        </a>
+                    </nav>
+
+                    <!-- Call Action CTA Button -->
+                    <div class="hidden sm:flex items-center space-x-3">
+                        <a id="cms-header-phone-link" href="tel:0907353533" class="bg-gradient-to-r from-lhRed to-red-700 hover:from-red-700 hover:to-lhRed text-white font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-red-600/30 flex items-center gap-2.5 transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div class="text-left leading-tight">
+                                <span class="block text-[10px] font-normal uppercase opacity-90">Hotline GĐ Lê Thanh Nhã</span>
+                                <span id="cms-header-phone-text" class="text-sm font-extrabold">0907.35.35.33</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="flex items-center gap-2 lg:hidden">
+                        <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 focus:outline-none" aria-label="Mở Menu">
+                            <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Dropdown -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+                <div class="px-4 py-2 bg-slate-50 rounded-lg border border-slate-200 mb-2">
+                    <p class="text-xs font-bold text-lhBlue">CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG</p>
+                    <p class="text-xs text-slate-600">Mã số thuế: <strong>1301102656</strong> | GĐ: <strong>Lê Thanh Nhã</strong></p>
+                </div>
+                <a href="#trang-chu" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Trang Chủ</a>
+                <a href="#gioi-thieu" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Giới Thiệu & Hồ Sơ Pháp Lý</a>
+                <a href="#doi-xe-truc-tuyen" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Đội Xe & Trạng Thái Trực Tuyến</a>
+                <a href="#dich-vu" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Dịch Vụ Vận Tải & Cơ Khí Xây Dựng</a>
+                <a href="#bao-gia" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Gửi Yêu Cầu Báo Giá (Liên Kết Admin)</a>
+                <a href="#lien-he" onclick="toggleMobileMenu()" class="block px-4 py-2.5 rounded-lg font-semibold text-slate-800 hover:bg-blue-50 hover:text-lhBlue">Liên Hệ & Bản Đồ Vĩnh Long</a>
+                <button onclick="toggleMobileMenu(); navigateToRoute('/admin');" class="w-full text-left px-4 py-2.5 rounded-lg font-bold text-amber-700 bg-amber-50 hover:bg-amber-100">
+                    <i class="fa-solid fa-user-shield mr-1.5"></i> Truy Cập Cổng Quản Trị (/admin)
+                </button>
+            </div>
+        </header>
+
+        <!-- HERO SECTION: BACKGROUND IS THE CRANE TRUCK (image_4e7f48.jpg) + FOREGROUND LOGO (image_4e713c.png) -->
+        <section id="trang-chu" class="relative hero-truck-bg min-h-[86vh] flex items-center py-14 sm:py-20 overflow-hidden">
+            <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/90 to-transparent pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    
+                    <!-- Left Column: Official Company Name, Tax ID, Southern Region Specialty, Director & Hotlines -->
+                    <div class="lg:col-span-7 text-white space-y-6">
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lhBlue/90 border border-sky-400/50 text-white text-xs sm:text-sm font-extrabold tracking-wide shadow">
+                                <i class="fa-solid fa-certificate text-amber-300"></i>
+                                <span>MÃ SỐ THUẾ: <span class="cms-tax-id">1301102656</span></span>
+                            </span>
+                            <span id="cms-booking-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lhGreen/90 border border-green-400/50 text-white text-xs sm:text-sm font-bold tracking-wide">
+                                <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+                                <span>Đang Mở Nhận Chuyến 24/7 Khu Vực Miền Nam</span>
+                            </span>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p id="cms-hero-subtitle" class="text-sky-300 font-display font-bold text-sm sm:text-lg tracking-wider uppercase">
+                                LE HOANG LOGISTICS — GỬI TRỌN NIỀM TIN
+                            </p>
+                            <h1 id="cms-hero-title" class="font-display font-black text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-white drop-shadow-md">
+                                CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI <span class="text-amber-400 underline decoration-lhRed decoration-4 underline-offset-8">LÊ HOÀNG</span>
+                            </h1>
+                        </div>
+
+                        <p id="cms-hero-desc" class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                            Đơn vị uy tín hàng đầu chuyên <strong class="text-white font-bold">vận tải hàng hóa đường bộ, dịch vụ xe đầu kéo gắn cẩu tự hành (cẩu cọc bê tông, ống cống, sắt thép, thiết bị nặng) và thi công cơ khí xây dựng</strong> phục vụ các công trình trên toàn <strong class="text-amber-300 font-bold">Khu Vực Miền Nam</strong> (Vĩnh Long, Bến Tre, Cần Thơ, ĐBSCL, TP.HCM & Đông Nam Bộ).
+                        </p>
+
+                        <!-- Director & Quick Contact Glass Box -->
+                        <div class="glass-card rounded-2xl p-5 sm:p-6 max-w-2xl border-l-4 border-l-amber-400">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                <div class="space-y-1">
+                                    <span class="text-xs uppercase tracking-wider text-sky-300 font-bold block">Người đại diện pháp luật / Giám đốc</span>
+                                    <h2 class="text-xl sm:text-2xl font-display font-extrabold text-white flex items-center gap-2">
+                                        <i class="fa-solid fa-user-tie text-amber-400 text-lg"></i>
+                                        <span id="cms-director-name">Ông LÊ THANH NHÃ</span>
+                                        <span class="text-sm font-semibold text-amber-300">(Mr. Nhã)</span>
+                                    </h2>
+                                    <p class="text-xs sm:text-sm text-slate-200">
+                                        <i class="fa-solid fa-building-columns text-amber-400 mr-1.5"></i> MST: <strong class="cms-tax-id text-white">1301102656</strong>
+                                    </p>
+                                    <p class="text-xs sm:text-sm text-slate-200">
+                                        <i class="fa-solid fa-location-dot text-red-400 mr-1.5"></i>
+                                        <span id="cms-hero-address">79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam</span>
+                                    </p>
+                                </div>
+                                <div class="flex flex-col gap-1.5 shrink-0 bg-slate-900/85 px-4 py-3 rounded-xl border border-slate-700">
+                                    <span class="text-[11px] text-amber-400 font-bold uppercase tracking-wider">Liên hệ điều xe 24/7:</span>
+                                    <a id="cms-phone1-link" href="tel:0907353533" class="text-lg font-extrabold text-white hover:text-amber-300 transition flex items-center gap-2">
+                                        <i class="fa-solid fa-phone text-green-400 text-sm"></i>
+                                        <span id="cms-phone1-text">0907.35.35.33</span>
+                                    </a>
+                                    <a id="cms-phone2-link" href="tel:0903052533" class="text-lg font-extrabold text-white hover:text-amber-300 transition flex items-center gap-2">
+                                        <i class="fa-solid fa-phone text-sky-400 text-sm"></i>
+                                        <span id="cms-phone2-text">0903.052.533</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center gap-4 pt-1">
+                            <a href="#bao-gia" class="pulse-btn bg-lhRed hover:bg-red-700 text-white font-bold px-7 py-4 rounded-xl shadow-xl flex items-center gap-3 text-base sm:text-lg transition transform hover:-translate-y-0.5">
+                                <i class="fa-solid fa-paper-plane text-xl"></i>
+                                <span>Đặt Xe & Báo Giá Trực Tuyến</span>
+                            </a>
+                            <a href="#doi-xe-truc-tuyen" class="bg-white/15 hover:bg-white/25 text-white border border-white/30 font-semibold px-6 py-4 rounded-xl backdrop-blur-sm flex items-center gap-2.5 text-base transition">
+                                <i class="fa-solid fa-truck-front text-amber-400 text-lg"></i>
+                                <span>Xem Xe Đang Sẵn Sàng</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Featured Second Image (Official Logo Card image_4e713c.png) -->
+                    <div class="lg:col-span-5 flex flex-col items-center">
+                        <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-2xl border-4 border-amber-400/90 max-w-md w-full transform lg:rotate-1 hover:rotate-0 transition duration-300">
+                            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+                                <span class="text-xs font-extrabold uppercase tracking-wider text-lhBlue flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-halved text-lhGreen"></i> MST: <span class="cms-tax-id">1301102656</span>
+                                </span>
+                                <span class="bg-green-100 text-lhGreen text-xs font-bold px-2.5 py-0.5 rounded-full">Uy Tín Miền Nam</span>
+                            </div>
+
+                            <!-- Second Image: Company Logo (image_4e713c.png) with automatic exact SVG fallback -->
+                            <div class="w-full flex justify-center items-center bg-white rounded-2xl overflow-hidden py-2">
+                                <img src="image_4e713c.png" 
+                                     alt="Logo Công Ty TNHH Cơ Khí Xây Dựng Vận Tải Lê Hoàng - Mr. Nhã 0907.35.35.33 - 0903.052.533" 
+                                     class="custom-logo-img w-full max-h-80 object-contain mx-auto"
+                                     onerror="this.style.display='none'; document.getElementById('hero-svg-logo-fallback').classList.remove('hidden');">
+                                
+                                <svg id="hero-svg-logo-fallback" class="w-full max-h-80 hidden">
+                                    <use href="#le-hoang-logo-graphic"></use>
+                                </svg>
+                            </div>
+
+                            <div class="mt-4 pt-3 border-t border-slate-100 bg-slate-50 rounded-xl p-3 text-center">
+                                <p class="text-xs font-extrabold text-slate-800 uppercase">CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Giám đốc: <strong>Lê Thanh Nhã</strong> • ĐT: <strong class="text-lhRed">0907.35.35.33</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS / HIGHLIGHTS BAR -->
+        <section class="relative z-20 -mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-6 sm:p-8 grid grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+                <div class="flex items-center gap-4 pt-2 sm:pt-0">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-lhBlue flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <div>
+                        <div class="cms-tax-id font-display font-black text-lg sm:text-xl text-slate-900">1301102656</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Mã số thuế doanh nghiệp</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 pt-4 sm:pt-0 sm:pl-6">
+                    <div class="w-12 h-12 rounded-xl bg-green-50 text-lhGreen flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-truck-front"></i>
+                    </div>
+                    <div>
+                        <div class="font-display font-black text-lg sm:text-xl text-slate-900">
+                            <span id="public-ready-fleet-count">4</span> Xe Sẵn Sàng
+                        </div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Đầu kéo cẩu & Rơ-moóc</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 pt-4 lg:pt-0 lg:pl-6">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-lhRed flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div>
+                        <div class="font-display font-black text-lg sm:text-xl text-slate-900">Lê Thanh Nhã</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Giám đốc điều hành</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 pt-4 lg:pt-0 lg:pl-6">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div>
+                        <div class="font-display font-black text-lg sm:text-xl text-slate-900">Cơ Khí & Xây Dựng</div>
+                        <div class="text-xs sm:text-sm text-slate-500 font-medium">Gửi trọn niềm tin mọi công trình</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE SYNCED FLEET SECTION: ĐỘI XE & TRẠNG THÁI HOẠT ĐỘNG (ĐỒNG BỘ TỪ ADMIN) -->
+        <section id="doi-xe-truc-tuyen" class="pt-16 sm:pt-24 pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-green-100 text-lhGreen text-xs font-extrabold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-lhGreen animate-ping"></span>
+                        <span>Đồng Bộ Thời Gian Thực Từ Bảng Điều Phối Admin</span>
+                    </div>
+                    <h2 class="font-display font-black text-2xl sm:text-4xl text-slate-900 mt-3">
+                        ĐỘI XE & TRẠNG THÁI NHẬN CHUYẾN HÔM NAY
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-1">
+                        Khách hàng có thể kiểm tra xe đang rảnh và bấm <strong>"Đặt Xe Này"</strong> để gửi yêu cầu trực tiếp tới Giám đốc Lê Thanh Nhã.
+                    </p>
+                </div>
+                <button onclick="navigateToRoute('/admin', 'fleet')" class="self-start md:self-auto inline-flex items-center gap-2 text-xs font-bold bg-slate-900 hover:bg-slate-800 text-amber-400 px-4 py-2.5 rounded-xl shadow transition">
+                    <i class="fa-solid fa-sliders"></i> Admin (/admin): Cập nhật đội xe
+                </button>
+            </div>
+
+            <!-- Dynamic Fleet Cards Grid rendered by JS -->
+            <div id="public-fleet-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Populated dynamically via renderPublicFleet() -->
+            </div>
+        </section>
+
+        <!-- ABOUT COMPANY, LEGAL PROFILE & DIRECTOR LE THANH NHA SECTION -->
+        <section id="gioi-thieu" class="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Company Introduction, Legal Table & Director Card -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 text-lhBlue text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-building-shield"></i> Giới Thiệu Doanh Nghiệp & Hồ Sơ Pháp Lý
+                    </div>
+                    
+                    <h2 class="font-display font-black text-2xl sm:text-4xl text-slate-900 leading-tight">
+                        CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI <span class="text-lhBlue">LÊ HOÀNG</span>
+                    </h2>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        Hoạt động với phương châm <strong class="text-lhRed">"GỬI TRỌN NIỀM TIN"</strong>, <strong>CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG (LE HOANG LOGISTICS)</strong> là đơn vị chuyên nghiệp trong lĩnh vực <strong>vận tải hàng hóa đường bộ, cẩu tự hành tải trọng lớn và cơ khí xây dựng</strong> tại Vĩnh Long cũng như khắp các tỉnh thành <strong>khu vực Miền Nam</strong>.
+                    </p>
+
+                    <!-- Official Legal Information Table -->
+                    <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-900 text-white px-5 py-3.5 flex items-center justify-between">
+                            <span class="font-display font-bold text-sm uppercase tracking-wider flex items-center gap-2">
+                                <i class="fa-solid fa-id-card-clip text-amber-400"></i> Thông Tin Pháp Lý Doanh Nghiệp
+                            </span>
+                            <span class="bg-lhGreen text-white text-xs font-bold px-2.5 py-0.5 rounded">Đang hoạt động</span>
+                        </div>
+                        <div class="divide-y divide-slate-200 text-sm">
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1">
+                                <span class="text-slate-500 font-medium">Tên công ty chính thức:</span>
+                                <span class="sm:col-span-2 font-bold text-slate-900">CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG</span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1 bg-slate-50/60">
+                                <span class="text-slate-500 font-medium">Tên giao dịch / Thương hiệu:</span>
+                                <span class="sm:col-span-2 font-bold text-lhBlue">LE HOANG LOGISTICS</span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1">
+                                <span class="text-slate-500 font-medium">Mã số thuế (MST):</span>
+                                <span class="sm:col-span-2 font-mono font-extrabold text-base text-lhRed flex items-center gap-2">
+                                    <span class="cms-tax-id">1301102656</span>
+                                    <button onclick="copyText(window.appState.cms.taxId || '1301102656', 'Đã sao chép Mã số thuế: ' + (window.appState.cms.taxId || '1301102656'))" class="text-xs font-sans font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-2 py-0.5 rounded border border-slate-300 transition">
+                                        <i class="fa-regular fa-copy mr-1"></i>Sao chép
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1 bg-slate-50/60">
+                                <span class="text-slate-500 font-medium">Giám đốc / Đại diện pháp luật:</span>
+                                <span id="cms-legal-director" class="sm:col-span-2 font-bold text-slate-900">Ông LÊ THANH NHÃ (Mr. Nhã)</span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1">
+                                <span class="text-slate-500 font-medium">Điện thoại liên hệ:</span>
+                                <span class="sm:col-span-2 font-bold text-slate-900">
+                                    <a href="tel:0907353533" class="text-lhRed hover:underline">0907.35.35.33</a> — 
+                                    <a href="tel:0903052533" class="text-lhBlue hover:underline">0903.052.533</a>
+                                </span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 p-3.5 sm:px-5 gap-1 bg-slate-50/60">
+                                <span class="text-slate-500 font-medium">Địa chỉ trụ sở:</span>
+                                <span class="sm:col-span-2 font-semibold text-slate-800">79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Director Spotlight Card: Lê Thanh Nhã -->
+                    <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative z-10">
+                            <div class="flex items-start sm:items-center gap-4">
+                                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white p-1.5 shadow-lg shrink-0 flex items-center justify-center">
+                                    <img src="image_4e713c.png" alt="Logo Lê Hoàng" class="custom-logo-img w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                                    <svg class="w-14 h-14 hidden"><use href="#le-hoang-emblem-only"></use></svg>
+                                </div>
+                                <div>
+                                    <span class="inline-block bg-amber-400 text-slate-950 text-xs font-extrabold px-2.5 py-0.5 rounded-md uppercase tracking-wide">
+                                        Giám Đốc Điều Hành
+                                    </span>
+                                    <h3 class="font-display font-black text-2xl sm:text-3xl text-white mt-1">
+                                        Ông LÊ THANH NHÃ
+                                    </h3>
+                                    <p class="text-slate-300 text-sm mt-1">
+                                        Trực tiếp điều phối xe, khảo sát & báo giá vận tải Miền Nam
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-2.5 shrink-0">
+                                <a href="tel:0907353533" class="bg-lhRed hover:bg-red-600 text-white font-bold px-4 py-2.5 rounded-xl flex items-center justify-center gap-2 shadow transition text-sm">
+                                    <i class="fa-solid fa-phone-volume"></i> 0907.35.35.33
+                                </a>
+                                <a href="tel:0903052533" class="bg-lhGreen hover:bg-green-600 text-white font-bold px-4 py-2.5 rounded-xl flex items-center justify-center gap-2 shadow transition text-sm">
+                                    <i class="fa-solid fa-phone"></i> 0903.052.533
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Combined Showcase of Both Images (Truck & Logo) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-white rounded-3xl p-3 shadow-xl border border-slate-200">
+                        <div class="relative rounded-2xl overflow-hidden bg-slate-900 aspect-[4/3]">
+                            <img src="image_4e7f48.jpg" 
+                                 alt="Xe đầu kéo cẩu Công Ty TNHH Cơ Khí Xây Dựng Vận Tải Lê Hoàng 71C-044.91 - Hotline 0907.35.35.33" 
+                                 class="custom-truck-img w-full h-full object-cover"
+                                 onerror="this.style.display='none'; document.getElementById('about-truck-fallback').classList.remove('hidden');">
+                            
+                            <div id="about-truck-fallback" class="hidden absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-800 to-slate-950 text-white">
+                                <i class="fa-solid fa-truck-ramp-box text-5xl text-amber-400 mb-3"></i>
+                                <p class="font-bold text-lg">Xe Đầu Kéo Gắn Cẩu Chuyên Dụng</p>
+                                <p class="text-xs text-slate-300 mt-1">Biển số 71C-044.91 • Cẩu Fassi 215 • Hotline 0907.35.35.33</p>
+                                <button onclick="openImageCustomizer()" class="mt-3 px-4 py-2 bg-amber-500 text-slate-950 font-bold text-xs rounded-lg">
+                                    Chọn ảnh xe từ máy
+                                </button>
+                            </div>
+
+                            <div class="absolute bottom-3 left-3 right-3 bg-slate-950/85 backdrop-blur-md text-white p-3.5 rounded-xl border border-white/15 flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-bold text-amber-400 block">XE ĐẦU KÉO CẨU 71C-044.91</span>
+                                    <span class="text-xs text-slate-200">Cẩu ống cống bê tông & cấu kiện nặng</span>
+                                </div>
+                                <span class="bg-lhBlue text-white text-xs font-extrabold px-2.5 py-1 rounded-lg shrink-0">0907.35.35.33</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-5 shadow-lg border border-slate-200 flex flex-col sm:flex-row items-center gap-5">
+                        <div class="w-32 h-32 rounded-2xl border border-slate-200 p-2 bg-white shrink-0 flex items-center justify-center">
+                            <img src="image_4e713c.png" alt="Logo Le Hoang Logistics" class="custom-logo-img w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                            <svg class="w-24 h-24 hidden"><use href="#le-hoang-logo-graphic"></use></svg>
+                        </div>
+                        <div class="space-y-1.5 text-center sm:text-left">
+                            <span class="text-xs font-bold text-lhGreen uppercase tracking-wider">Bộ Nhận Diện Thương Hiệu</span>
+                            <h4 class="font-display font-black text-lg text-slate-900">LE HOANG LOGISTICS</h4>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Biểu tượng chữ <strong>LH</strong> mạnh mẽ kết hợp mái nhà công trình vững chãi, thể hiện sự gắn kết giữa <strong>Cơ Khí - Xây Dựng - Vận Tải</strong>.
+                            </p>
+                            <div class="pt-1 text-xs font-bold text-lhBlue">MST: 1301102656 • Gửi Trọn Niềm Tin</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="dich-vu" class="py-16 sm:py-20 bg-slate-900 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto space-y-3">
+                    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-route"></i> Lĩnh Vực Hoạt Động Chính
+                    </span>
+                    <h2 class="font-display font-black text-2xl sm:text-4xl text-white">
+                        CƠ KHÍ • XÂY DỰNG • VẬN TẢI KHU VỰC MIỀN NAM
+                    </h2>
+                </div>
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800/90 rounded-3xl p-7 border border-slate-700 hover:border-amber-400 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-lhRed/20 text-red-400 flex items-center justify-center text-2xl mb-5">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-white mb-3">
+                                Vận Tải Xe Đầu Kéo Gắn Cẩu Tự Hành
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Chuyên cẩu hạ và vận chuyển hàng nặng, hàng dài như cọc bê tông ly tâm, ống cống bê tông, dầm cầu, trụ điện, sắt thép cuộn và máy móc thiết bị công trình tận nơi.
+                            </p>
+                        </div>
+                        <button onclick="prefillQuoteService('Thuê xe đầu kéo gắn cẩu tự hành (71C-044.91)')" class="mt-6 pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-amber-400 font-bold hover:underline">
+                            <span>Đặt xe đầu kéo cẩu ngay</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="bg-slate-800/90 rounded-3xl p-7 border border-slate-700 hover:border-amber-400 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-lhBlue/20 text-sky-400 flex items-center justify-center text-2xl mb-5">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-white mb-3">
+                                Chuyên Vận Tải Tuyến Khu Vực Miền Nam
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Nhận vận chuyển hàng hóa nguyên chuyến, hàng hợp đồng xuyên suốt Vĩnh Long, các tỉnh miền Tây (ĐBSCL), TP. Hồ Chí Minh, Bình Dương, Đồng Nai, Bà Rịa - Vũng Tàu.
+                            </p>
+                        </div>
+                        <button onclick="prefillQuoteService('Vận tải hàng hóa nguyên chuyến Miền Nam')" class="mt-6 pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-amber-400 font-bold hover:underline">
+                            <span>Nhận báo giá tuyến Miền Nam</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="bg-slate-800/90 rounded-3xl p-7 border border-slate-700 hover:border-amber-400 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-lhGreen/20 text-green-400 flex items-center justify-center text-2xl mb-5">
+                                <i class="fa-solid fa-helmet-safety"></i>
+                            </div>
+                            <h3 class="font-display font-bold text-xl text-white mb-3">
+                                Dịch Vụ Cơ Khí & Xây Dựng Công Trình
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Cung ứng vật tư, gia công kết cấu cơ khí xây dựng, lắp dựng cấu kiện bê tông - thép tiền chế và hỗ trợ cơ giới thi công hạ tầng cầu đường, dân dụng, công nghiệp.
+                            </p>
+                        </div>
+                        <button onclick="prefillQuoteService('Gia công cơ khí & thi công xây dựng công trình')" class="mt-6 pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-amber-400 font-bold hover:underline">
+                            <span>Gửi yêu cầu khảo sát & báo giá</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE & BOOKING FORM (LINKED REAL-TIME TO ADMIN DASHBOARD) -->
+        <section id="bao-gia" class="parallax-truck-section py-16 sm:py-24 text-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white text-slate-900 rounded-3xl shadow-2xl p-6 sm:p-10 lg:p-12 border border-slate-100">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                        
+                        <div class="lg:col-span-5 space-y-4">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-lhRed text-xs font-extrabold uppercase">
+                                <span class="w-2 h-2 rounded-full bg-lhRed animate-ping"></span>
+                                Liên Kết Trực Tiếp Bảng Admin
+                            </span>
+                            <h2 class="font-display font-black text-2xl sm:text-3xl text-slate-900">
+                                ĐẶT XE & YÊU CẦU BÁO GIÁ NHANH
+                            </h2>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Ngay khi quý khách bấm <strong>"Gửi Yêu Cầu"</strong>, thông tin đơn hàng sẽ tự động chuyển thẳng vào <strong>Hệ thống Quản trị Admin của Giám đốc Lê Thanh Nhã</strong> kèm chuông báo và kết nối Zalo/SĐT tức thì.
+                            </p>
+                            <div class="pt-2 space-y-2.5">
+                                <a href="tel:0907353533" class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-100 hover:bg-blue-50 transition border border-slate-200">
+                                    <div class="w-10 h-10 rounded-lg bg-lhRed text-white flex items-center justify-center font-bold shrink-0">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-slate-500 block">Hotline 1 & Zalo (Mr. Lê Thanh Nhã)</span>
+                                        <span class="font-display font-extrabold text-base text-slate-900">0907353533 (0907.35.35.33)</span>
+                                    </div>
+                                </a>
+                                <a href="tel:0903052533" class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-100 hover:bg-blue-50 transition border border-slate-200">
+                                    <div class="w-10 h-10 rounded-lg bg-lhBlue text-white flex items-center justify-center font-bold shrink-0">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-xs text-slate-500 block">Hotline 2 (Mr. Lê Thanh Nhã)</span>
+                                        <span class="font-display font-extrabold text-base text-slate-900">0903052533 (0903.052.533)</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Form Synced with Admin -->
+                        <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="lg:col-span-7 space-y-4 bg-slate-50 p-6 sm:p-7 rounded-2xl border border-slate-200">
+                            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                                <span class="text-xs font-extrabold uppercase text-lhBlue">Thông tin chuyến hàng / công trình</span>
+                                <span class="text-[11px] font-semibold text-lhGreen"><i class="fa-solid fa-bolt mr-1"></i>Tự động báo về Admin</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Họ tên / Quý công ty *</label>
+                                    <input type="text" id="q-name" required placeholder="VD: Anh Minh - Cty Xây Dựng..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue focus:ring-2 focus:ring-lhBlue/20 outline-none text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Số điện thoại liên hệ *</label>
+                                    <input type="tel" id="q-phone" required placeholder="Nhập SĐT để Mr. Nhã gọi lại" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue focus:ring-2 focus:ring-lhBlue/20 outline-none text-sm bg-white">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Loại dịch vụ / Phương tiện</label>
+                                    <select id="q-type" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue outline-none text-sm bg-white font-medium">
+                                        <option value="Cẩu & chở cọc bê tông / ống cống (Xe 71C-044.91)">Cẩu & chở cọc bê tông / ống cống (Xe 71C-044.91)</option>
+                                        <option value="Thuê xe đầu kéo gắn cẩu tự hành">Thuê xe đầu kéo gắn cẩu tự hành</option>
+                                        <option value="Vận chuyển sắt thép, VLXD tuyến Miền Nam">Vận chuyển sắt thép, VLXD tuyến Miền Nam</option>
+                                        <option value="Gia công cơ khí & thi công xây dựng">Gia công cơ khí & thi công xây dựng</option>
+                                        <option value="Hợp đồng vận tải nguyên chuyến (Xuất HĐ VAT)">Hợp đồng vận tải nguyên chuyến (Xuất HĐ VAT)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Tuyến đường (Bốc hàng → Giao hàng) *</label>
+                                    <input type="text" id="q-route" required placeholder="VD: Vĩnh Long đi Cần Thơ / TP.HCM..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue outline-none text-sm bg-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Ghi chú chi tiết (Khối lượng, ngày bốc hàng, yêu cầu xuất hóa đơn MST 1301102656...)</label>
+                                <textarea id="q-note" rows="2" placeholder="Nhập chi tiết loại hàng, số tấn hoặc thời gian dự kiến..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue outline-none text-sm bg-white"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-lhBlue hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2.5 text-base">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Gửi Yêu Cầu Tới Giám Đốc Lê Thanh Nhã</span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOTTOM CONTACT & GOOGLE MAPS SECTION -->
+        <footer id="lien-he" class="bg-slate-950 text-white pt-16 pb-28 border-t-4 border-lhRed">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                            <div class="w-20 h-20 rounded-2xl bg-white p-1.5 shrink-0 flex items-center justify-center shadow-lg">
+                                <img src="image_4e713c.png" alt="Logo Công Ty TNHH Cơ Khí Xây Dựng Vận Tải Lê Hoàng" class="custom-logo-img w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                                <svg class="w-16 h-16 hidden"><use href="#le-hoang-emblem-only"></use></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs font-extrabold uppercase tracking-widest text-amber-400 block">LE HOANG LOGISTICS — GỬI TRỌN NIỀM TIN</span>
+                                <h3 class="font-display font-black text-xl sm:text-2xl text-white leading-snug mt-0.5">
+                                    CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG
+                                </h3>
+                                <span class="inline-block mt-1.5 bg-lhBlue/40 border border-sky-400/40 text-sky-300 text-xs font-extrabold px-3 py-0.5 rounded-md">
+                                    Mã số thuế: 1301102656
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3.5 bg-slate-900/90 p-5 sm:p-6 rounded-2xl border border-slate-800">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 uppercase font-semibold block">Giám đốc điều hành</span>
+                                    <span class="text-base sm:text-lg font-extrabold text-white">Ông LÊ THANH NHÃ (Mr. Nhã)</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 uppercase font-semibold block">Mã số thuế doanh nghiệp</span>
+                                    <span class="text-base sm:text-lg font-mono font-extrabold text-amber-300">1301102656</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 uppercase font-semibold block">Số điện thoại liên hệ (24/7)</span>
+                                    <div class="flex flex-wrap items-center gap-2 mt-0.5">
+                                        <a href="tel:0907353533" class="text-lg sm:text-xl font-display font-black text-amber-400 hover:underline">0907353533</a>
+                                        <span class="text-slate-500">-</span>
+                                        <a href="tel:0903052533" class="text-lg sm:text-xl font-display font-black text-sky-400 hover:underline">0903052533</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-10 h-10 rounded-xl bg-green-500/20 text-green-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-400 uppercase font-semibold block">Địa chỉ Google Maps</span>
+                                    <span id="cms-footer-address" class="text-sm sm:text-base font-bold text-white block">
+                                        79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam
+                                    </span>
+                                    <div class="mt-2 flex flex-wrap gap-2">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=79CC%2BFQX%2C+%C4%90H173%2C+Ph%C3%BA+T%C3%A2n%2C+V%C4%A9nh+Long%2C+Vi%E1%BB%87t+Nam" 
+                                           target="_blank" rel="noopener noreferrer"
+                                           class="inline-flex items-center gap-1.5 text-xs font-bold bg-lhBlue hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg transition">
+                                            <i class="fa-solid fa-diamond-turn-right"></i> Mở chỉ đường Google Maps
+                                        </a>
+                                        <button onclick="copyText('79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam', 'Đã sao chép địa chỉ công ty!')" 
+                                                class="inline-flex items-center gap-1.5 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                                            <i class="fa-regular fa-copy"></i> Sao chép địa chỉ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right 6 Columns: Interactive Embedded Google Map -->
+                    <div class="lg:col-span-6 flex flex-col justify-between space-y-4">
+                        <div class="bg-slate-900 p-3 rounded-3xl border border-slate-800 shadow-2xl h-full flex flex-col">
+                            <div class="flex items-center justify-between px-3 py-2 mb-2">
+                                <div class="flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-400">
+                                    <i class="fa-solid fa-location-dot text-red-500"></i>
+                                    <span>Bản Đồ Vị Trí: 79CC+FQX, ĐH173, Phú Tân, Vĩnh Long</span>
+                                </div>
+                                <span class="text-[11px] bg-slate-800 text-slate-300 px-2.5 py-0.5 rounded-full">Google Maps</span>
+                            </div>
+                            <div class="relative w-full flex-1 min-h-[320px] sm:min-h-[360px] rounded-2xl overflow-hidden bg-slate-800">
+                                <iframe 
+                                    title="Bản đồ CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG - 79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam"
+                                    src="https://maps.google.com/maps?q=79CC%2BFQX,%20%C4%90H173,%20Ph%C3%BA%20T%C3%A2n,%20V%C4%A9nh%20Long,%20Vi%E1%BB%87t%20Nam&t=m&z=15&output=embed&iwloc=near" 
+                                    class="w-full h-full border-0" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                    <p class="text-center sm:text-left">
+                        © 2026 <strong class="text-white">CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG</strong> (MST: <strong class="cms-tax-id text-amber-400">1301102656</strong>). Giám đốc: <strong class="text-white">Lê Thanh Nhã</strong>.
+                    </p>
+                    <a href="#/admin" onclick="navigateToRoute('/admin'); return false;" class="text-amber-400 hover:underline font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-lock"></i> Truy cập cổng Quản trị viên (/admin)
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 2: CỔNG ĐĂNG NHẬP QUẢN TRỊ VIÊN (ROUTE: "/admin" KHI CHƯA LOGIN) -->
+    <!-- ===================================================================== -->
+    <div id="admin-login-view" class="hidden min-h-[calc(100vh-52px)] hero-truck-bg flex items-center justify-center p-4 sm:p-6">
+        <div class="max-w-md w-full bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border-2 border-amber-400/90 overflow-hidden">
+            
+            <!-- Top Header with Official Logo & Company Name -->
+            <div class="bg-slate-900 text-white p-6 text-center relative border-b border-slate-800">
+                <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-400 text-slate-950 text-[10px] font-black uppercase tracking-wider mb-3">
+                    <i class="fa-solid fa-shield-halved"></i> CỔNG QUẢN TRỊ HỆ THỐNG (/admin)
+                </span>
+                <div class="w-20 h-20 rounded-2xl bg-white p-1.5 mx-auto shadow-lg flex items-center justify-center mb-3">
+                    <img src="image_4e713c.png" alt="Logo Công Ty Lê Hoàng" class="custom-logo-img w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <svg class="w-16 h-16 hidden"><use href="#le-hoang-emblem-only"></use></svg>
+                </div>
+                <h2 class="font-display font-black text-base sm:text-lg text-white leading-snug">
+                    CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG
+                </h2>
+                <p class="text-xs text-sky-300 font-semibold mt-1">
+                    MST: <span class="cms-tax-id">1301102656</span> • GĐ: Ông Lê Thanh Nhã
+                </p>
+            </div>
+
+            <!-- Login Form -->
+            <form id="admin-login-form" onsubmit="handleAdminLogin(event)" class="p-6 sm:p-8 space-y-4">
+                
+                <!-- Error Alert Banner -->
+                <div id="admin-login-error" class="hidden p-3.5 rounded-xl bg-red-50 border border-red-200 text-lhRed text-xs font-bold flex items-start gap-2.5">
+                    <i class="fa-solid fa-circle-exclamation text-base mt-0.5 shrink-0"></i>
+                    <span id="admin-login-error-text">Tên đăng nhập hoặc mật khẩu không chính xác!</span>
+                </div>
+
+                <div>
+                    <label for="login-username" class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">
+                        <i class="fa-solid fa-user-shield text-lhBlue mr-1"></i> Tên đăng nhập (Admin User) *
+                    </label>
+                    <input type="text" id="login-username" required autocomplete="username" placeholder="Nhập tên đăng nhập Admin..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-lhBlue focus:ring-2 focus:ring-lhBlue/20 outline-none text-sm font-semibold text-slate-900 bg-white">
+                </div>
+
+                <div>
+                    <label for="login-password" class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">
+                        <i class="fa-solid fa-key text-lhRed mr-1"></i> Mật khẩu (Password) *
+                    </label>
+                    <div class="relative">
+                        <input type="password" id="login-password" required autocomplete="current-password" placeholder="Nhập mật khẩu quản trị..." class="w-full pl-4 pr-11 py-3 rounded-xl border border-slate-300 focus:border-lhBlue focus:ring-2 focus:ring-lhBlue/20 outline-none text-sm font-semibold text-slate-900 bg-white">
+                        <button type="button" onclick="togglePasswordVisibility()" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 p-1" title="Hiện/Ẩn mật khẩu">
+                            <i id="password-eye-icon" class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs pt-1">
+                    <label class="flex items-center gap-2 cursor-pointer font-medium text-slate-600">
+                        <input type="checkbox" id="login-remember" checked class="w-4 h-4 accent-lhBlue rounded">
+                        <span>Ghi nhớ phiên đăng nhập</span>
+                    </label>
+                    <span class="text-slate-400 font-medium flex items-center gap-1">
+                        <i class="fa-solid fa-lock text-lhGreen"></i> Bảo mật quản trị
+                    </span>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-lhBlue to-blue-800 hover:from-blue-800 hover:to-lhBlue text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Đăng Nhập Hệ Thống Quản Trị (/admin)</span>
+                </button>
+
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                    <button type="button" onclick="navigateToRoute('/')" class="hover:text-slate-900 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-arrow-left"></i> Quay về Trang chủ (/)
+                    </button>
+                    <span>Hotline: <strong class="text-slate-800">0907.35.35.33</strong></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 3: BẢNG ĐIỀU KHIỂN QUẢN TRỊ VIÊN (ROUTE: "/admin/dashboard")     -->
+    <!-- ===================================================================== -->
+    <div id="admin-dashboard-view" class="hidden min-h-screen bg-slate-100 text-slate-800 pb-20">
+        
+        <!-- Admin Header Banner -->
+        <div class="bg-slate-900 text-white border-b border-slate-800 shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0">
+                        <img src="image_4e713c.png" alt="Logo Lê Hoàng" class="custom-logo-img w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                        <svg class="w-10 h-10 hidden"><use href="#le-hoang-emblem-only"></use></svg>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="bg-amber-400 text-slate-950 text-[10px] font-black uppercase px-2 py-0.5 rounded">ADMIN DASHBOARD (/admin)</span>
+                            <span class="bg-green-500/20 border border-green-400/40 text-green-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+                                <i class="fa-solid fa-user-check"></i> Xin chào, <strong id="admin-logged-user-label">tuanbillgates2011</strong>
+                            </span>
+                            <span class="text-xs text-sky-300 font-bold">MST: <span class="cms-tax-id">1301102656</span></span>
+                        </div>
+                        <h1 class="font-display font-black text-lg sm:text-xl text-white mt-0.5">
+                            CÔNG TY TNHH CƠ KHÍ XÂY DỰNG VẬN TẢI LÊ HOÀNG
+                        </h1>
+                        <p class="text-xs text-slate-400">Giám đốc điều hành: <strong class="text-white">Ông Lê Thanh Nhã</strong> (0907.35.35.33 - 0903.052.533)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="createSampleOrder()" class="bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 text-xs font-bold px-3 py-2.5 rounded-xl transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-bolt"></i> + Đơn Thử Nghiệm
+                    </button>
+                    <button onclick="openManualOrderModal()" class="bg-lhGreen hover:bg-green-700 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shadow transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-plus"></i> Thêm Đơn Khách Gọi
+                    </button>
+                    <button onclick="navigateToRoute('/')" class="bg-lhBlue hover:bg-blue-700 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shadow transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-eye"></i> Xem Trang Chủ (/)
+                    </button>
+                    <button onclick="handleAdminLogout()" class="bg-lhRed hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2.5 rounded-xl shadow transition flex items-center gap-1.5" title="Đăng xuất khỏi tài khoản tuanbillgates2011">
+                        <i class="fa-solid fa-right-from-bracket"></i> Đăng Xuất
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 space-y-6">
+            
+            <!-- KPI SUMMARY CARDS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-slate-400 block">Tổng Yêu Cầu / Đơn Hàng</span>
+                        <span id="kpi-total-orders" class="font-display font-black text-3xl text-slate-900 mt-1 block">0</span>
+                        <span class="text-xs text-slate-500 mt-1 block">Đồng bộ trực tiếp từ Web</span>
+                    </div>
+                    <div class="w-12 h-12 rounded-2xl bg-blue-50 text-lhBlue flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border-2 border-red-200 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-lhRed block">Đơn Mới Chờ Báo Giá</span>
+                        <span id="kpi-new-orders" class="font-display font-black text-3xl text-lhRed mt-1 block">0</span>
+                        <span class="text-xs text-slate-500 mt-1 block">Cần gọi lại báo giá ngay</span>
+                    </div>
+                    <div class="w-12 h-12 rounded-2xl bg-red-50 text-lhRed flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-bell animate-bounce"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-lhGreen block">Đội Xe Sẵn Sàng</span>
+                        <span id="kpi-ready-trucks" class="font-display font-black text-3xl text-lhGreen mt-1 block">0 / 0</span>
+                        <span class="text-xs text-slate-500 mt-1 block">Hiển thị ngoài Trang chủ</span>
+                    </div>
+                    <div class="w-12 h-12 rounded-2xl bg-green-50 text-lhGreen flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-amber-600 block">Doanh Thu Chốt Ước Tính</span>
+                        <span id="kpi-total-revenue" class="font-display font-black text-2xl text-slate-900 mt-1 block">0 đ</span>
+                        <span class="text-xs text-slate-500 mt-1 block">Tổng cước các chuyến</span>
+                    </div>
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADMIN NAVIGATION TABS -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-2 flex flex-wrap gap-2">
+                <button onclick="switchAdminTab('orders')" id="tab-btn-orders" class="admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 bg-slate-900 text-white shadow">
+                    <i class="fa-solid fa-list-check text-amber-400"></i>
+                    <span>1. Quản Lý Đơn Hàng & Báo Giá</span>
+                </button>
+                <button onclick="switchAdminTab('fleet')" id="tab-btn-fleet" class="admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                    <i class="fa-solid fa-truck-ramp-box text-lhBlue"></i>
+                    <span>2. Điều Phối Đội Xe (Đồng Bộ Web)</span>
+                </button>
+                <button onclick="switchAdminTab('cms')" id="tab-btn-cms" class="admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                    <i class="fa-solid fa-pen-to-square text-lhGreen"></i>
+                    <span>3. Chỉnh Sửa Website Trực Tiếp (Live CMS)</span>
+                </button>
+                <button onclick="switchAdminTab('settings')" id="tab-btn-settings" class="admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 text-slate-600 hover:bg-slate-100">
+                    <i class="fa-solid fa-link text-lhRed"></i>
+                    <span>4. Liên Kết Zalo / SĐT & Bảo Mật</span>
+                </button>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- ADMIN TAB 1: QUẢN LÝ ĐƠN HÀNG & BÁO GIÁ KHÁCH ĐẶT              -->
+            <!-- =============================================================== -->
+            <div id="admin-tab-orders" class="admin-tab-panel space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5">
+                    <!-- Filter & Search Bar -->
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button onclick="setOrderFilter('ALL')" id="filter-ALL" class="order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-lhBlue text-white">Tất cả</button>
+                            <button onclick="setOrderFilter('Mới')" id="filter-Mới" class="order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Đơn mới chờ báo giá</button>
+                            <button onclick="setOrderFilter('Đã báo giá')" id="filter-Đã báo giá" class="order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Đã báo giá</button>
+                            <button onclick="setOrderFilter('Đang vận chuyển')" id="filter-Đang vận chuyển" class="order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Đang chạy</button>
+                            <button onclick="setOrderFilter('Hoàn thành')" id="filter-Hoàn thành" class="order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">Hoàn thành</button>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-2">
+                            <div class="relative">
+                                <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+                                <input type="text" id="admin-order-search" oninput="renderAdminOrders()" placeholder="Tìm SĐT, tên khách, tuyến..." class="pl-8 pr-3 py-1.5 rounded-xl border border-slate-300 text-xs outline-none focus:border-lhBlue">
+                            </div>
+                            <button onclick="exportOrdersCSV()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl flex items-center gap-1.5 transition">
+                                <i class="fa-solid fa-file-csv text-green-400"></i> Xuất Excel (CSV)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Orders Table -->
+                    <div class="overflow-x-auto mt-4">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-slate-200 text-[11px] font-extrabold uppercase text-slate-500 bg-slate-50">
+                                    <th class="py-3 px-3">Mã / Thời gian</th>
+                                    <th class="py-3 px-3">Khách hàng & SĐT</th>
+                                    <th class="py-3 px-3">Dịch vụ & Tuyến đường</th>
+                                    <th class="py-3 px-3">Giá cước chốt (VNĐ)</th>
+                                    <th class="py-3 px-3">Trạng thái</th>
+                                    <th class="py-3 px-3 text-right">Thao tác nhanh</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-orders-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm">
+                                <!-- Populated via renderAdminOrders() -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- ADMIN TAB 2: QUẢN LÝ ĐỘI XE & ĐIỀU PHỐI (FLEET MANAGEMENT)     -->
+            <!-- =============================================================== -->
+            <div id="admin-tab-fleet" class="admin-tab-panel hidden space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-200">
+                        <div>
+                            <h2 class="font-display font-bold text-lg text-slate-900">Quản Lý Đội Xe & Vị Trí Thời Gian Thực</h2>
+                            <p class="text-xs text-slate-500 mt-0.5">Mọi thay đổi về trạng thái xe hoặc vị trí hiện tại sẽ hiển thị ngay lập tức ngoài Trang chủ cho khách hàng đặt xe.</p>
+                        </div>
+                        <button onclick="openAddVehicleModal()" class="bg-lhBlue hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow flex items-center gap-2 self-start sm:self-auto">
+                            <i class="fa-solid fa-plus"></i> Thêm Phương Tiện Mới
+                        </button>
+                    </div>
+
+                    <div id="admin-fleet-grid" class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+                        <!-- Rendered via renderAdminFleet() -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- ADMIN TAB 3: CHỈNH SỬA WEBSITE TRỰC TIẾP (LIVE CMS)            -->
+            <!-- =============================================================== -->
+            <div id="admin-tab-cms" class="admin-tab-panel hidden space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+                    <div class="border-b border-slate-200 pb-4 mb-6 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <h2 class="font-display font-bold text-lg text-slate-900">Chỉnh Sửa Nội Dung Website Trực Tiếp (Live CMS)</h2>
+                            <p class="text-xs text-slate-500">Thay đổi thông báo chuyến xe, số điện thoại Hotline, khẩu hiệu hoặc bật/tắt nhận chuyến trực tuyến.</p>
+                        </div>
+                        <button onclick="openImageCustomizer()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs px-4 py-2.5 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-camera"></i> Đổi Ảnh Xe Tải Cẩu / Logo
+                        </button>
+                    </div>
+
+                    <form onsubmit="saveCmsSettings(event)" class="space-y-5 max-w-3xl">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                                1. Dòng thông báo nổi bật trên đầu Trang chủ (Ví dụ: Báo xe rảnh chiều về, ưu đãi giá cước...)
+                            </label>
+                            <input type="text" id="cms-input-announcement" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">2. Tên người đại diện / Giám đốc</label>
+                                <input type="text" id="cms-input-director" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">3. Mã số thuế doanh nghiệp (MST)</label>
+                                <input type="text" id="cms-input-taxid" required value="1301102656" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-mono font-bold text-lhRed focus:border-lhBlue outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">4. Khẩu hiệu (Slogan thương hiệu)</label>
+                                <input type="text" id="cms-input-slogan" required value="Gửi Trọn Niềm Tin" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">5. Trạng thái nhận chuyến trên Web</label>
+                                <select id="cms-input-status" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm bg-white font-semibold">
+                                    <option value="Đang Mở Nhận Chuyến 24/7 Khu Vực Miền Nam">Đang Mở Nhận Chuyến 24/7 Khu Vực Miền Nam</option>
+                                    <option value="Đang Có Xe Rảnh Tuyến Vĩnh Long - TP.HCM">Đang Có Xe Rảnh Tuyến Vĩnh Long - TP.HCM</option>
+                                    <option value="Đang Phục Vụ Công Trình - Vui Lòng Gọi Đặt Trước">Đang Phục Vụ Công Trình - Vui Lòng Gọi Đặt Trước</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">6. Số Hotline 1 (Hiển thị toàn trang)</label>
+                                <input type="text" id="cms-input-phone1" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">7. Số Hotline 2</label>
+                                <input type="text" id="cms-input-phone2" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">8. Địa chỉ trụ sở & Google Maps</label>
+                            <input type="text" id="cms-input-address" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-lhBlue outline-none">
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap items-center gap-3">
+                            <button type="submit" class="bg-lhGreen hover:bg-green-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 text-sm transition">
+                                <i class="fa-solid fa-floppy-disk"></i> Lưu & Cập Nhật Ra Trang Chủ Ngay
+                            </button>
+                            <button type="button" onclick="navigateToRoute('/')" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-5 py-3.5 rounded-xl text-sm transition">
+                                Xem Trang Chủ (/)
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- ADMIN TAB 4: CẤU HÌNH LIÊN KẾT ZALO / SĐT & BẢO MẬT            -->
+            <!-- =============================================================== -->
+            <div id="admin-tab-settings" class="admin-tab-panel hidden space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 max-w-3xl space-y-6">
+                    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-4">
+                        <div>
+                            <h2 class="font-display font-bold text-lg text-slate-900">Tài Khoản Quản Trị (/admin) & Liên Kết Zalo</h2>
+                            <p class="text-xs text-slate-500 mt-1">Quản lý phiên đăng nhập của Admin <strong>tuanbillgates2011</strong> và liên kết trực tiếp với Giám đốc Lê Thanh Nhã.</p>
+                        </div>
+                        <button onclick="handleAdminLogout()" class="bg-lhRed hover:bg-red-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl flex items-center gap-2 shadow">
+                            <i class="fa-solid fa-right-from-bracket"></i> Đăng xuất khỏi /admin
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl border border-green-200 bg-green-50/70 space-y-1.5">
+                            <span class="text-[11px] font-extrabold uppercase text-lhGreen block"><i class="fa-solid fa-user-check mr-1"></i>Tài khoản Admin đang đăng nhập</span>
+                            <div class="font-mono font-black text-base text-slate-900">tuanbillgates2011</div>
+                            <div class="text-xs text-slate-600">Quyền hạn: <strong>Quản trị viên tối cao (Full Access)</strong></div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50 space-y-1.5">
+                            <label class="block text-xs font-bold uppercase text-slate-700">Số Zalo Nhận Chuyển Tiếp Đơn Hàng</label>
+                            <input type="text" id="setting-zalo-phone" value="0907353533" class="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-sm font-bold text-lhBlue bg-white">
+                            <p class="text-[11px] text-slate-500">Chuyển thẳng nội dung đơn đặt xe về Zalo số này.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-blue-50 border border-blue-200 space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase text-lhBlue"><i class="fa-solid fa-cloud mr-1.5"></i>Mã Phiên Đồng Bộ Đám Mây (Cloud Sync ID):</span>
+                            <span class="text-[11px] bg-green-100 text-lhGreen font-bold px-2.5 py-0.5 rounded-full">Đang hoạt động</span>
+                        </div>
+                        <p id="admin-user-id-display" class="font-mono text-xs bg-white p-2.5 rounded-lg border border-blue-200 text-slate-700 break-all">
+                            Đang khởi tạo kết nối...
+                        </p>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <button onclick="playNotificationBell(); showToast('Kiểm tra chuông báo', 'Chuông báo đơn hàng mới hoạt động tốt!');" class="bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold text-xs px-4 py-3 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-volume-high"></i> Nghe Thử Chuông Báo Đơn Mới
+                        </button>
+                        <a href="https://zalo.me/0907353533" target="_blank" rel="noopener noreferrer" class="bg-lhBlue hover:bg-blue-700 text-white font-bold text-xs px-4 py-3 rounded-xl flex items-center gap-2">
+                            <i class="fa-solid fa-comment-dots"></i> Mở Zalo 0907.35.35.33
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODAL 1: KẾT NỐI TRỰC TIẾP ZALO / SĐT SAU KHI KHÁCH GỬI ĐƠN           -->
+    <!-- ===================================================================== -->
+    <div id="order-success-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-lhGreen space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-green-100 text-lhGreen flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-extrabold uppercase text-lhGreen">Đã Đồng Bộ Vào Hệ Thống Admin</span>
+                        <h3 class="font-display font-black text-lg text-slate-900">Gửi Yêu Cầu Đặt Xe Thành Công!</h3>
+                    </div>
+                </div>
+                <button onclick="closeOrderSuccessModal()" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div id="order-modal-summary" class="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm space-y-1.5">
+                <!-- Filled dynamically -->
+            </div>
+
+            <div class="space-y-2.5">
+                <p class="text-xs font-bold text-slate-700 uppercase tracking-wide">
+                    Kết nối trực tiếp với Giám đốc Lê Thanh Nhã ngay bây giờ:
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <a id="modal-zalo-btn" href="https://zalo.me/0907353533" target="_blank" rel="noopener noreferrer" onclick="copyCurrentOrderSummary()" class="bg-lhBlue hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm shadow">
+                        <i class="fa-solid fa-comment-dots"></i> Nhắn Zalo (Đã chép đơn)
+                    </a>
+                    <a id="modal-sms-btn" href="sms:0907353533" class="bg-lhGreen hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm shadow">
+                        <i class="fa-solid fa-comment-sms"></i> Gửi Tin Nhắn SMS
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <a href="tel:0907353533" class="bg-lhRed hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm shadow">
+                        <i class="fa-solid fa-phone-volume"></i> Gọi Ngay: 0907.35.35.33
+                    </a>
+                    <button onclick="closeOrderSuccessModal(); navigateToRoute('/admin', 'orders');" class="bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm shadow">
+                        <i class="fa-solid fa-user-shield"></i> Xem Đơn Trong /admin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODAL 2: THÊM ĐƠN HÀNG THỦ CÔNG TRONG ADMIN                           -->
+    <!-- ===================================================================== -->
+    <div id="manual-order-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="font-display font-bold text-lg text-slate-900">Thêm Đơn Hàng Khách Gọi Điện</h3>
+                <button onclick="closeManualOrderModal()" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form onsubmit="submitManualOrder(event)" class="space-y-3 text-xs sm:text-sm">
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Tên khách hàng / Đối tác *</label>
+                    <input type="text" id="m-name" required placeholder="VD: Cty Bê Tông Vĩnh Long" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Số điện thoại *</label>
+                    <input type="tel" id="m-phone" required placeholder="VD: 0918xxxxxx" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Loại dịch vụ / Xe điều phối</label>
+                    <input type="text" id="m-type" required value="Cẩu & chở cọc bê tông (Xe 71C-044.91)" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Tuyến đường *</label>
+                    <input type="text" id="m-route" required placeholder="VD: Phú Tân, Vĩnh Long đi Trà Vinh" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Giá cước chốt dự kiến (VNĐ)</label>
+                    <input type="number" id="m-price" placeholder="VD: 6500000" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div class="pt-2 flex justify-end gap-2">
+                    <button type="button" onclick="closeManualOrderModal()" class="px-4 py-2.5 rounded-xl bg-slate-100 font-bold text-slate-700">Hủy</button>
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-lhGreen text-white font-bold">Lưu Đơn Hàng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODAL 3: THÊM PHƯƠNG TIỆN MỚI VÀO ĐỘI XE                              -->
+    <!-- ===================================================================== -->
+    <div id="add-vehicle-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="font-display font-bold text-lg text-slate-900">Thêm Phương Tiện Vào Đội Xe</h3>
+                <button onclick="closeAddVehicleModal()" class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form onsubmit="submitNewVehicle(event)" class="space-y-3 text-xs sm:text-sm">
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Tên phương tiện / Loại xe *</label>
+                    <input type="text" id="v-name" required placeholder="VD: Xe Đầu Kéo Gắn Cẩu Tự Hành 15 Tấn" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="font-bold text-slate-700 block mb-1">Biển kiểm soát *</label>
+                        <input type="text" id="v-plate" required placeholder="VD: 64C-088.99" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                    </div>
+                    <div>
+                        <label class="font-bold text-slate-700 block mb-1">Tải trọng / Sức nâng *</label>
+                        <input type="text" id="v-capacity" required placeholder="VD: 30 Tấn / Cẩu 12T" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                    </div>
+                </div>
+                <div>
+                    <label class="font-bold text-slate-700 block mb-1">Vị trí hiện tại *</label>
+                    <input type="text" id="v-location" required value="Phú Tân, Vĩnh Long" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div class="pt-2 flex justify-end gap-2">
+                    <button type="button" onclick="closeAddVehicleModal()" class="px-4 py-2.5 rounded-xl bg-slate-100 font-bold text-slate-700">Hủy</button>
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-lhBlue text-white font-bold">Thêm Xe & Đồng Bộ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MODAL 4: NHẬP MÃ PIN BẢO VỆ ADMIN (NẾU BẬT)                           -->
+    <!-- ===================================================================== -->
+    <div id="admin-pin-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4 text-center">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-user-lock"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-slate-900">Xác Thực Quản Trị Viên</h3>
+            <p class="text-xs text-slate-500">Nhập mã PIN của Giám đốc Lê Thanh Nhã (Mặc định: <strong>3533</strong>)</p>
+            <input type="password" id="pin-input" placeholder="Nhập 3533" class="w-full text-center font-mono text-xl font-bold tracking-widest px-4 py-3 rounded-xl border border-slate-300">
+            <div class="flex gap-2">
+                <button onclick="document.getElementById('admin-pin-modal').classList.add('hidden')" class="flex-1 py-2.5 rounded-xl bg-slate-100 font-bold text-xs text-slate-700">Đóng</button>
+                <button onclick="verifyAdminPin()" class="flex-1 py-2.5 rounded-xl bg-slate-900 text-amber-400 font-bold text-xs">Mở Bảng Admin</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING BOTTOM CALL BAR FOR MOBILE & DESKTOP QUICK ACCESS -->
+    <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 z-40 flex items-center justify-center sm:justify-end gap-2.5 pointer-events-none">
+        <a href="tel:0907353533" class="pointer-events-auto pulse-btn bg-lhRed hover:bg-red-700 text-white font-extrabold px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2 border-2 border-white/80 text-xs sm:text-sm">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>0907.35.35.33</span>
+        </a>
+        <button onclick="navigateToRoute('/admin')" class="pointer-events-auto bg-slate-900 hover:bg-slate-800 text-amber-400 font-extrabold px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2 border-2 border-amber-400/80 text-xs sm:text-sm transition">
+            <i class="fa-solid fa-user-shield"></i>
+            <span>/admin (<span id="floating-new-orders">0</span>)</span>
+        </button>
+    </div>
+
+    <!-- MODAL FOR CUSTOM LOCAL IMAGE UPLOAD -->
+    <div id="image-modal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-5">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
+                    <i class="fa-solid fa-images text-lhBlue"></i> Cập Nhật Hình Ảnh Từ Máy
+                </h3>
+                <button onclick="closeImageCustomizer()" class="w-8 h-8 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+                Chọn trực tiếp file <strong>ảnh chiếc xe cẩu (71C-044.91)</strong> hoặc <strong>ảnh logo Lê Hoàng</strong> từ điện thoại/máy tính của bạn để hiển thị ngay lập tức:
+            </p>
+            <div class="space-y-4">
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                    <label class="block text-xs font-bold text-slate-800 mb-1.5">1. Chọn hình nền Xe Đầu Kéo Cẩu:</label>
+                    <input type="file" accept="image/*" onchange="updateTruckImage(event)" class="block w-full text-xs text-slate-600 file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-lhBlue file:text-white hover:file:bg-blue-700 cursor-pointer">
+                </div>
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                    <label class="block text-xs font-bold text-slate-800 mb-1.5">2. Chọn hình Logo Công Ty Lê Hoàng:</label>
+                    <input type="file" accept="image/*" onchange="updateLogoImage(event)" class="block w-full text-xs text-slate-600 file:mr-3 file:py-2 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-lhGreen file:text-white hover:file:bg-green-700 cursor-pointer">
+                </div>
+            </div>
+            <div class="flex justify-end pt-2">
+                <button onclick="closeImageCustomizer()" class="px-5 py-2.5 bg-slate-900 text-white text-xs font-bold rounded-xl hover:bg-slate-800">
+                    Hoàn tất & Đóng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM MESSAGE BOX / TOAST NOTIFICATION -->
+    <div id="toast-box" class="fixed top-20 right-4 z-50 hidden max-w-sm bg-slate-900 text-white px-5 py-4 rounded-2xl shadow-2xl border-l-4 border-amber-400 flex items-start gap-3">
+        <i class="fa-solid fa-circle-check text-green-400 text-xl mt-0.5"></i>
+        <div class="text-xs sm:text-sm">
+            <p id="toast-title" class="font-bold text-white">Thông báo</p>
+            <p id="toast-message" class="text-slate-300 mt-0.5"></p>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- REAL-TIME APPLICATION & FIREBASE SYNCHRONIZATION SCRIPT               -->
+    <!-- ===================================================================== -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, updateDoc, deleteDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // -------------------------------------------------------------------
+        // 1. INITIAL IN-MEMORY STATE (Works immediately + Syncs with Cloud)
+        // -------------------------------------------------------------------
+        const ADMIN_CREDENTIALS = {
+            username: 'tuanbillgates2011',
+            password: 'lehoangtuan2011@'
+        };
+        const AUTH_STORAGE_KEY = 'lehoang_admin_auth_session_v1';
+
+        window.appState = {
+            route: '/', // '/' or '/admin'
+            adminTab: 'orders',
+            orderFilter: 'ALL',
+            isAuthenticated: false,
+            adminUser: null,
+            lastCopySummary: '',
+            cms: {
+                announcement: 'Đội xe đầu kéo gắn cẩu Fassi 215 (71C-044.91) đang sẵn sàng nhận chuyến cẩu & vận tải khắp khu vực Miền Nam. Liên hệ GĐ Lê Thanh Nhã: 0907.35.35.33!',
+                director: 'Ông LÊ THANH NHÃ',
+                taxId: '1301102656',
+                slogan: 'Gửi Trọn Niềm Tin',
+                bookingStatus: 'Đang Mở Nhận Chuyến 24/7 Khu Vực Miền Nam',
+                phone1: '0907.35.35.33',
+                phone2: '0903.052.533',
+                address: '79CC+FQX, ĐH173, Phú Tân, Vĩnh Long, Việt Nam'
+            },
+            fleet: [
+                {
+                    id: 'xe-71c-04491',
+                    name: 'Xe Đầu Kéo Sơ-Mi Rơ-Moóc Gắn Cẩu Fassi 215',
+                    plate: '71C-044.91',
+                    capacity: 'Đầu kéo 32 Tấn • Cẩu Fassi 215',
+                    status: 'Sẵn sàng nhận chuyến',
+                    location: 'Phú Tân, Vĩnh Long',
+                    highlight: 'Chuyên cẩu ống cống bê tông, cọc ly tâm, cấu kiện nặng'
+                },
+                {
+                    id: 'xe-cau-15t',
+                    name: 'Xe Tải Thùng Gắn Cẩu Tự Hành 15 Tấn',
+                    plate: '64C-092.33',
+                    capacity: 'Tải 15 Tấn • Cẩu 8 Tấn',
+                    status: 'Sẵn sàng nhận chuyến',
+                    location: 'TP. Vĩnh Long - Cần Thơ',
+                    highlight: 'Chuyên cẩu sắt thép, máy móc cơ khí, vật liệu công trình'
+                },
+                {
+                    id: 'xe-romooc-san',
+                    name: 'Xe Đầu Kéo Rơ-Moóc Sàn Dài 14m',
+                    plate: '64H-035.33',
+                    capacity: 'Tải trọng 34 Tấn',
+                    status: 'Đang đi hàng',
+                    location: 'Tuyến TP.HCM → Vĩnh Long (Nhận hàng chiều về)',
+                    highlight: 'Vận chuyển sắt thép cuộn, kết cấu thép nhà xưởng, cọc dài'
+                }
+            ],
+            orders: [
+                {
+                    id: 'LH-1028',
+                    createdAt: Date.now() - 3600000 * 2,
+                    timeStr: 'Hôm nay, 09:30',
+                    name: 'Cty Bê Tông Miền Tây',
+                    phone: '0918234567',
+                    type: 'Cẩu & chở cọc bê tông / ống cống (Xe 71C-044.91)',
+                    route: 'Vĩnh Long → TP. Cần Thơ',
+                    note: 'Cẩu hạ 18 ống cống bê tông D1000 tại công trình bờ kè, xuất HĐ VAT.',
+                    price: 7500000,
+                    status: 'Đang vận chuyển'
+                },
+                {
+                    id: 'LH-1029',
+                    createdAt: Date.now() - 1800000,
+                    timeStr: 'Vừa xong',
+                    name: 'Anh Hoàng - Nhà Thầu Xây Dựng',
+                    phone: '0909888777',
+                    type: 'Thuê xe đầu kéo gắn cẩu tự hành',
+                    route: 'KCN Hòa Phú (Vĩnh Long) → Bến Tre',
+                    note: 'Cần xe đầu kéo cẩu 71C-044.91 bốc kết cấu thép cơ khí vào sáng mai.',
+                    price: 0,
+                    status: 'Mới'
+                }
+            ]
+        };
+
+        let db = null;
+        let auth = null;
+        let currentUser = null;
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'le-hoang-logistics-1301102656';
+
+        // -------------------------------------------------------------------
+        // 2. WEB AUDIO NOTIFICATION BELL (Synthesized chime, no external URL)
+        // -------------------------------------------------------------------
+        window.playNotificationBell = function() {
+            try {
+                const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                if (!AudioCtx) return;
+                const ctx = new AudioCtx();
+                const now = ctx.currentTime;
+                const osc1 = ctx.createOscillator();
+                const osc2 = ctx.createOscillator();
+                const gain = ctx.createGain();
+
+                osc1.type = 'sine';
+                osc2.type = 'triangle';
+                osc1.frequency.setValueAtTime(587.33, now); // D5
+                osc1.frequency.setValueAtTime(880, now + 0.14); // A5
+                osc2.frequency.setValueAtTime(293.66, now);
+                osc2.frequency.setValueAtTime(440, now + 0.14);
+
+                gain.gain.setValueAtTime(0.18, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.65);
+
+                osc1.connect(gain);
+                osc2.connect(gain);
+                gain.connect(ctx.destination);
+
+                osc1.start(now);
+                osc2.start(now);
+                osc1.stop(now + 0.65);
+                osc2.stop(now + 0.65);
+            } catch (e) {
+                // Ignore audio context restrictions if not interacted
+            }
+        };
+
+        // -------------------------------------------------------------------
+        // 3. RENDER FUNCTIONS FOR PUBLIC WEBSITE & ADMIN DASHBOARD
+        // -------------------------------------------------------------------
+        window.renderAll = function() {
+            renderCmsToPublic();
+            renderPublicFleet();
+            renderAdminFleet();
+            renderAdminOrders();
+            updateKpiMetrics();
+        };
+
+        function formatVND(num) {
+            const n = Number(num) || 0;
+            return n.toLocaleString('vi-VN') + ' đ';
+        }
+
+        function renderCmsToPublic() {
+            const cms = window.appState.cms;
+            const cleanPhone1 = (cms.phone1 || '0907353533').replace(/[^0-9]/g, '');
+            const cleanPhone2 = (cms.phone2 || '0903052533').replace(/[^0-9]/g, '');
+            const taxId = cms.taxId || '1301102656';
+            const slogan = cms.slogan || 'Gửi Trọn Niềm Tin';
+
+            document.getElementById('cms-announcement-text').textContent = cms.announcement;
+            document.getElementById('cms-director-name').textContent = cms.director;
+            const legalDir = document.getElementById('cms-legal-director');
+            if (legalDir) legalDir.textContent = `${cms.director} (Mr. Nhã)`;
+
+            const sloganHeader = document.getElementById('cms-slogan-header');
+            if (sloganHeader) sloganHeader.textContent = `"${slogan}"`;
+
+            document.querySelectorAll('.cms-tax-id').forEach(el => {
+                el.textContent = taxId;
+            });
+
+            document.getElementById('cms-booking-badge').innerHTML = `
+                <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+                <span>${cms.bookingStatus}</span>
+            `;
+            document.getElementById('cms-header-phone-text').textContent = cms.phone1;
+            document.getElementById('cms-header-phone-link').href = `tel:${cleanPhone1}`;
+            document.getElementById('cms-phone1-text').textContent = cms.phone1;
+            document.getElementById('cms-phone1-link').href = `tel:${cleanPhone1}`;
+            document.getElementById('cms-phone2-text').textContent = cms.phone2;
+            document.getElementById('cms-phone2-link').href = `tel:${cleanPhone2}`;
+            document.getElementById('cms-hero-address').textContent = cms.address;
+            document.getElementById('cms-footer-address').textContent = cms.address;
+
+            // Populate CMS form inputs in Admin
+            const inAnn = document.getElementById('cms-input-announcement');
+            if (inAnn && document.activeElement !== inAnn) {
+                inAnn.value = cms.announcement;
+                document.getElementById('cms-input-director').value = cms.director;
+                const taxInput = document.getElementById('cms-input-taxid');
+                if (taxInput) taxInput.value = taxId;
+                const sloganInput = document.getElementById('cms-input-slogan');
+                if (sloganInput) sloganInput.value = slogan;
+                document.getElementById('cms-input-status').value = cms.bookingStatus;
+                document.getElementById('cms-input-phone1').value = cms.phone1;
+                document.getElementById('cms-input-phone2').value = cms.phone2;
+                document.getElementById('cms-input-address').value = cms.address;
+            }
+        }
+
+        window.renderPublicFleet = function() {
+            const container = document.getElementById('public-fleet-grid');
+            if (!container) return;
+
+            const readyCount = window.appState.fleet.filter(v => v.status === 'Sẵn sàng nhận chuyến').length;
+            const readyEl = document.getElementById('public-ready-fleet-count');
+            if (readyEl) readyEl.textContent = readyCount;
+
+            container.innerHTML = window.appState.fleet.map(v => {
+                const isReady = v.status === 'Sẵn sàng nhận chuyến';
+                const isBusy = v.status === 'Đang đi hàng';
+                const badgeClass = isReady
+                    ? 'bg-green-100 text-lhGreen border-green-300'
+                    : (isBusy ? 'bg-amber-100 text-amber-800 border-amber-300' : 'bg-slate-200 text-slate-700 border-slate-300');
+
+                return `
+                    <div class="bg-white rounded-3xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="px-3 py-1 rounded-full text-xs font-extrabold border ${badgeClass} flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full ${isReady ? 'bg-lhGreen animate-ping' : 'bg-amber-500'}"></span>
+                                    ${v.status}
+                                </span>
+                                <span class="font-mono font-black text-xs bg-slate-900 text-amber-400 px-2.5 py-1 rounded-lg">${v.plate}</span>
+                            </div>
+                            <h3 class="font-display font-bold text-lg text-slate-900">${v.name}</h3>
+                            <p class="text-xs font-semibold text-lhBlue mt-1"><i class="fa-solid fa-weight-hanging mr-1"></i>${v.capacity}</p>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${v.highlight || 'Phục vụ vận tải & cẩu hàng khu vực Miền Nam'}</p>
+                        </div>
+
+                        <div class="mt-5 pt-4 border-t border-slate-100 space-y-3">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-slate-500"><i class="fa-solid fa-location-dot text-lhRed mr-1"></i>Vị trí hiện tại:</span>
+                                <span class="font-bold text-slate-900">${v.location}</span>
+                            </div>
+                            <button onclick="prefillQuoteService('${v.name} (${v.plate})')" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs transition flex items-center justify-center gap-2 ${isReady ? 'bg-lhBlue hover:bg-blue-800 text-white shadow' : 'bg-slate-100 hover:bg-slate-200 text-slate-800'}">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <span>Đặt Xe Này (${v.plate})</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        window.renderAdminFleet = function() {
+            const container = document.getElementById('admin-fleet-grid');
+            if (!container) return;
+
+            container.innerHTML = window.appState.fleet.map(v => `
+                <div class="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-3">
+                    <div class="flex items-start justify-between gap-2">
+                        <div>
+                            <span class="font-mono text-xs font-extrabold bg-slate-900 text-amber-400 px-2.5 py-0.5 rounded">${v.plate}</span>
+                            <h4 class="font-display font-bold text-base text-slate-900 mt-1">${v.name}</h4>
+                            <p class="text-xs text-slate-500">${v.capacity}</p>
+                        </div>
+                        <button onclick="removeVehicle('${v.id}')" class="text-slate-400 hover:text-lhRed text-xs p-1" title="Xóa phương tiện">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Trạng thái hiển thị</label>
+                            <select onchange="updateVehicleStatus('${v.id}', this.value)" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold bg-white">
+                                <option value="Sẵn sàng nhận chuyến" ${v.status === 'Sẵn sàng nhận chuyến' ? 'selected' : ''}>🟢 Sẵn sàng nhận chuyến</option>
+                                <option value="Đang đi hàng" ${v.status === 'Đang đi hàng' ? 'selected' : ''}>🟡 Đang đi hàng</option>
+                                <option value="Bảo dưỡng" ${v.status === 'Bảo dưỡng' ? 'selected' : ''}>⚪ Đang bảo dưỡng</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase text-slate-500 mb-1">Vị trí hiện tại (Nhấn Enter để lưu)</label>
+                            <div class="flex gap-1.5">
+                                <input type="text" id="loc-${v.id}" value="${v.location}" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs bg-white">
+                                <button onclick="updateVehicleLocation('${v.id}')" class="bg-slate-900 text-white px-3 rounded-xl text-xs font-bold shrink-0 hover:bg-lhBlue">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        };
+
+        window.renderAdminOrders = function() {
+            const tbody = document.getElementById('admin-orders-tbody');
+            if (!tbody) return;
+
+            const searchVal = (document.getElementById('admin-order-search')?.value || '').toLowerCase().trim();
+            const filter = window.appState.orderFilter;
+
+            const sortedOrders = [...window.appState.orders].sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+
+            const filtered = sortedOrders.filter(o => {
+                const matchFilter = filter === 'ALL' || o.status === filter;
+                const matchSearch = !searchVal ||
+                    (o.name || '').toLowerCase().includes(searchVal) ||
+                    (o.phone || '').toLowerCase().includes(searchVal) ||
+                    (o.route || '').toLowerCase().includes(searchVal) ||
+                    (o.type || '').toLowerCase().includes(searchVal);
+                return matchFilter && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="py-10 text-center text-slate-400 text-sm">
+                            Chưa có đơn hàng nào khớp với bộ lọc hiện tại.
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map(o => {
+                const isNew = o.status === 'Mới';
+                const cleanCustomerPhone = (o.phone || '').replace(/[^0-9]/g, '');
+                return `
+                    <tr class="${isNew ? 'bg-red-50/60' : 'hover:bg-slate-50'} transition">
+                        <td class="py-3.5 px-3 align-top">
+                            <span class="font-mono font-bold text-xs bg-slate-900 text-white px-2 py-0.5 rounded">${o.id}</span>
+                            <span class="block text-[11px] text-slate-500 mt-1">${o.timeStr || 'Hôm nay'}</span>
+                        </td>
+                        <td class="py-3.5 px-3 align-top">
+                            <div class="font-bold text-slate-900">${o.name}</div>
+                            <a href="tel:${cleanCustomerPhone}" class="text-xs font-extrabold text-lhRed hover:underline flex items-center gap-1 mt-0.5">
+                                <i class="fa-solid fa-phone"></i> ${o.phone}
+                            </a>
+                        </td>
+                        <td class="py-3.5 px-3 align-top max-w-xs">
+                            <div class="font-bold text-lhBlue text-xs">${o.type}</div>
+                            <div class="text-xs font-semibold text-slate-800 mt-0.5"><i class="fa-solid fa-route text-amber-500 mr-1"></i>${o.route}</div>
+                            ${o.note ? `<div class="text-[11px] text-slate-500 italic mt-1">"${o.note}"</div>` : ''}
+                        </td>
+                        <td class="py-3.5 px-3 align-top">
+                            <div class="flex items-center gap-1.5">
+                                <input type="number" value="${o.price || 0}" onchange="updateOrderPrice('${o.id}', this.value)" class="w-28 px-2.5 py-1.5 rounded-lg border border-slate-300 text-xs font-bold bg-white">
+                                <span class="text-xs text-slate-500">đ</span>
+                            </div>
+                        </td>
+                        <td class="py-3.5 px-3 align-top">
+                            <select onchange="updateOrderStatus('${o.id}', this.value)" class="px-2.5 py-1.5 rounded-lg border text-xs font-bold ${isNew ? 'bg-lhRed text-white border-lhRed' : 'bg-white text-slate-800 border-slate-300'}">
+                                <option value="Mới" ${o.status === 'Mới' ? 'selected' : ''}>🔴 Đơn Mới</option>
+                                <option value="Đã báo giá" ${o.status === 'Đã báo giá' ? 'selected' : ''}>🔵 Đang báo giá</option>
+                                <option value="Đang vận chuyển" ${o.status === 'Đang vận chuyển' ? 'selected' : ''}>🟡 Đã điều xe / Đang chạy</option>
+                                <option value="Hoàn thành" ${o.status === 'Hoàn thành' ? 'selected' : ''}>🟢 Hoàn thành</option>
+                            </select>
+                        </td>
+                        <td class="py-3.5 px-3 align-top text-right">
+                            <div class="inline-flex items-center gap-1.5">
+                                <a href="tel:${cleanCustomerPhone}" class="p-2 rounded-lg bg-green-100 text-lhGreen hover:bg-green-200 text-xs font-bold" title="Gọi cho khách">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                                <a href="https://zalo.me/${cleanCustomerPhone}" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-blue-100 text-lhBlue hover:bg-blue-200 text-xs font-bold" title="Nhắn Zalo cho khách">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                </a>
+                                <button onclick="deleteOrder('${o.id}')" class="p-2 rounded-lg bg-slate-100 text-slate-500 hover:bg-red-100 hover:text-lhRed text-xs" title="Xóa đơn">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        };
+
+        function updateKpiMetrics() {
+            const orders = window.appState.orders;
+            const newCount = orders.filter(o => o.status === 'Mới').length;
+            const totalRevenue = orders.reduce((sum, o) => sum + (Number(o.price) || 0), 0);
+            const readyTrucks = window.appState.fleet.filter(v => v.status === 'Sẵn sàng nhận chuyến').length;
+
+            document.getElementById('kpi-total-orders').textContent = orders.length;
+            document.getElementById('kpi-new-orders').textContent = newCount;
+            document.getElementById('kpi-ready-trucks').textContent = `${readyTrucks} / ${window.appState.fleet.length}`;
+            document.getElementById('kpi-total-revenue').textContent = formatVND(totalRevenue);
+
+            document.getElementById('top-new-orders-badge').textContent = `${newCount} mới`;
+            document.getElementById('floating-new-orders').textContent = newCount;
+        }
+
+        // -------------------------------------------------------------------
+        // 4. ROUTING ("/" vs "/admin") & AUTHENTICATION (tuanbillgates2011)
+        // -------------------------------------------------------------------
+        function loadSavedAuthSession() {
+            try {
+                const saved = localStorage.getItem(AUTH_STORAGE_KEY) || sessionStorage.getItem(AUTH_STORAGE_KEY);
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed && parsed.username === ADMIN_CREDENTIALS.username) {
+                        window.appState.isAuthenticated = true;
+                        window.appState.adminUser = parsed.username;
+                    }
+                }
+            } catch (e) {}
+            updateAuthBadgeUI();
+        }
+
+        function updateAuthBadgeUI() {
+            const dot = document.getElementById('auth-status-dot');
+            const text = document.getElementById('auth-status-text');
+            const userLabel = document.getElementById('admin-logged-user-label');
+
+            if (window.appState.isAuthenticated) {
+                if (dot) dot.className = 'w-2 h-2 rounded-full bg-green-400 animate-ping';
+                if (text) text.innerHTML = `Admin: <strong class="text-amber-400">${window.appState.adminUser}</strong>`;
+                if (userLabel) userLabel.textContent = window.appState.adminUser;
+            } else {
+                if (dot) dot.className = 'w-2 h-2 rounded-full bg-slate-500';
+                if (text) text.textContent = 'Chưa đăng nhập /admin';
+            }
+        }
+
+        window.navigateToRoute = function(routePath, targetAdminTab) {
+            if (targetAdminTab) {
+                switchAdminTab(targetAdminTab);
+            }
+
+            const pubView = document.getElementById('public-website-view');
+            const loginView = document.getElementById('admin-login-view');
+            const admView = document.getElementById('admin-dashboard-view');
+            const btnPub = document.getElementById('btn-mode-public');
+            const btnAdm = document.getElementById('btn-mode-admin');
+            const routeBadge = document.getElementById('current-route-badge');
+
+            if (routePath === '/admin' || routePath === '#/admin') {
+                window.appState.route = '/admin';
+                try {
+                    if (window.location.hash !== '#/admin') {
+                        history.replaceState(null, '', '#/admin');
+                    }
+                } catch (e) {}
+
+                pubView.classList.add('hidden');
+                btnAdm.className = 'px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-2 bg-lhBlue text-white shadow';
+                btnPub.className = 'px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-1.5 text-slate-300 hover:text-white';
+
+                if (window.appState.isAuthenticated) {
+                    loginView.classList.add('hidden');
+                    admView.classList.remove('hidden');
+                    if (routeBadge) routeBadge.textContent = '/admin/dashboard';
+                } else {
+                    admView.classList.add('hidden');
+                    loginView.classList.remove('hidden');
+                    if (routeBadge) routeBadge.textContent = '/admin/login';
+                    setTimeout(() => document.getElementById('login-username')?.focus(), 100);
+                }
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                window.appState.route = '/';
+                try {
+                    if (window.location.hash === '#/admin') {
+                        history.replaceState(null, '', window.location.pathname);
+                    }
+                } catch (e) {}
+
+                loginView.classList.add('hidden');
+                admView.classList.add('hidden');
+                pubView.classList.remove('hidden');
+                if (routeBadge) routeBadge.textContent = '/';
+                btnPub.className = 'px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-1.5 bg-lhBlue text-white shadow';
+                btnAdm.className = 'px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition flex items-center gap-2 text-slate-300 hover:text-white';
+            }
+            updateAuthBadgeUI();
+            renderAll();
+        };
+
+        // Keep backward compatibility with old helper calls
+        window.switchAppMode = function(mode) {
+            navigateToRoute(mode === 'admin' ? '/admin' : '/');
+        };
+        window.requestAdminAccess = function(targetTab) {
+            navigateToRoute('/admin', targetTab);
+        };
+
+        window.handleAdminLogin = function(event) {
+            event.preventDefault();
+            const userIn = document.getElementById('login-username').value.trim();
+            const passIn = document.getElementById('login-password').value;
+            const remember = document.getElementById('login-remember').checked;
+            const errBox = document.getElementById('admin-login-error');
+            const errText = document.getElementById('admin-login-error-text');
+
+            if (userIn === ADMIN_CREDENTIALS.username && passIn === ADMIN_CREDENTIALS.password) {
+                errBox.classList.add('hidden');
+                window.appState.isAuthenticated = true;
+                window.appState.adminUser = ADMIN_CREDENTIALS.username;
+
+                const payload = JSON.stringify({
+                    username: ADMIN_CREDENTIALS.username,
+                    loginAt: Date.now()
+                });
+                try {
+                    if (remember) {
+                        localStorage.setItem(AUTH_STORAGE_KEY, payload);
+                    } else {
+                        sessionStorage.setItem(AUTH_STORAGE_KEY, payload);
+                    }
+                } catch (e) {}
+
+                playNotificationBell();
+                showToast('Đăng nhập /admin thành công!', `Xin chào Admin ${ADMIN_CREDENTIALS.username} — Giám đốc Lê Thanh Nhã.`);
+                navigateToRoute('/admin');
+            } else {
+                errBox.classList.remove('hidden');
+                errText.textContent = 'Sai tên đăng nhập hoặc mật khẩu! Vui lòng kiểm tra lại tài khoản Admin.';
+                showToast('Đăng nhập thất bại', 'Vui lòng nhập đúng User và Mật khẩu quản trị.');
+            }
+        };
+
+        window.handleAdminLogout = function() {
+            window.appState.isAuthenticated = false;
+            window.appState.adminUser = null;
+            try {
+                localStorage.removeItem(AUTH_STORAGE_KEY);
+                sessionStorage.removeItem(AUTH_STORAGE_KEY);
+            } catch (e) {}
+            document.getElementById('admin-login-form')?.reset();
+            updateAuthBadgeUI();
+            showToast('Đã đăng xuất', 'Bạn đã đăng xuất khỏi hệ thống Quản trị (/admin).');
+            navigateToRoute('/admin');
+        };
+
+        window.togglePasswordVisibility = function() {
+            const passInput = document.getElementById('login-password');
+            const eyeIcon = document.getElementById('password-eye-icon');
+            if (passInput.type === 'password') {
+                passInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }
+        };
+
+        window.switchAdminTab = function(tabName) {
+            window.appState.adminTab = tabName;
+            ['orders', 'fleet', 'cms', 'settings'].forEach(t => {
+                const panel = document.getElementById(`admin-tab-${t}`);
+                const btn = document.getElementById(`tab-btn-${t}`);
+                if (t === tabName) {
+                    panel.classList.remove('hidden');
+                    btn.className = 'admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 bg-slate-900 text-white shadow';
+                } else {
+                    panel.classList.add('hidden');
+                    btn.className = 'admin-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 text-slate-600 hover:bg-slate-100';
+                }
+            });
+        };
+
+        window.setOrderFilter = function(filter) {
+            window.appState.orderFilter = filter;
+            ['ALL', 'Mới', 'Đã báo giá', 'Đang vận chuyển', 'Hoàn thành'].forEach(f => {
+                const btn = document.getElementById(`filter-${f}`);
+                if (!btn) return;
+                if (f === filter) {
+                    btn.className = 'order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-lhBlue text-white';
+                } else {
+                    btn.className = 'order-filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200';
+                }
+            });
+            renderAdminOrders();
+        };
+
+        window.prefillQuoteService = function(serviceName) {
+            const select = document.getElementById('q-type');
+            if (select) {
+                let exists = false;
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === serviceName) {
+                        exists = true;
+                        break;
+                    }
+                }
+                if (!exists) {
+                    const opt = document.createElement('option');
+                    opt.value = serviceName;
+                    opt.textContent = serviceName;
+                    select.appendChild(opt);
+                }
+                select.value = serviceName;
+            }
+            const formSec = document.getElementById('bao-gia');
+            if (formSec) formSec.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => document.getElementById('q-name')?.focus(), 500);
+        };
+
+        // Customer Quote Form Submit -> Sends to Admin + Opens Direct Zalo/SMS Link Modal
+        window.handleQuoteSubmit = async function(event) {
+            event.preventDefault();
+            const name = document.getElementById('q-name').value.trim();
+            const phone = document.getElementById('q-phone').value.trim();
+            const type = document.getElementById('q-type').value;
+            const route = document.getElementById('q-route').value.trim();
+            const note = document.getElementById('q-note').value.trim();
+
+            const now = new Date();
+            const timeStr = `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')} - ${now.getDate()}/${now.getMonth() + 1}`;
+            const orderId = 'LH-' + Math.floor(1000 + Math.random() * 9000);
+
+            const newOrder = {
+                id: orderId,
+                createdAt: Date.now(),
+                timeStr,
+                name,
+                phone,
+                type,
+                route,
+                note,
+                price: 0,
+                status: 'Mới'
+            };
+
+            window.appState.orders.unshift(newOrder);
+            playNotificationBell();
+            renderAll();
+            document.getElementById('quote-form').reset();
+
+            // Sync to Firestore if connected
+            await syncOrderToCloud(newOrder);
+
+            // Prepare Direct Zalo / SMS Summary for Mr. Lê Thanh Nhã
+            const zaloPhone = (document.getElementById('setting-zalo-phone')?.value || '0907353533').replace(/[^0-9]/g, '');
+            const summaryText = `[ĐƠN ĐẶT XE MỚI ${orderId} - WEB LÊ HOÀNG]\n- Khách hàng: ${name}\n- SĐT: ${phone}\n- Dịch vụ: ${type}\n- Tuyến đường: ${route}\n- Ghi chú: ${note || 'Không'}`;
+            window.appState.lastCopySummary = summaryText;
+
+            document.getElementById('order-modal-summary').innerHTML = `
+                <div class="font-bold text-lhBlue">Mã đơn: ${orderId} (${timeStr})</div>
+                <div><strong>Khách hàng:</strong> ${name} — <strong>SĐT:</strong> <span class="text-lhRed font-bold">${phone}</span></div>
+                <div><strong>Dịch vụ:</strong> ${type}</div>
+                <div><strong>Tuyến đường:</strong> ${route}</div>
+                ${note ? `<div><strong>Ghi chú:</strong> ${note}</div>` : ''}
+            `;
+            document.getElementById('modal-zalo-btn').href = `https://zalo.me/${zaloPhone}`;
+            document.getElementById('modal-sms-btn').href = `sms:${zaloPhone}?body=${encodeURIComponent(summaryText)}`;
+            document.getElementById('order-success-modal').classList.remove('hidden');
+        };
+
+        window.copyCurrentOrderSummary = function() {
+            if (window.appState.lastCopySummary) {
+                copyText(window.appState.lastCopySummary, 'Đã sao chép nội dung đơn hàng để dán vào Zalo!');
+            }
+        };
+
+        window.closeOrderSuccessModal = function() {
+            document.getElementById('order-success-modal').classList.add('hidden');
+        };
+
+        // Admin Order Actions
+        window.updateOrderStatus = async function(orderId, newStatus) {
+            const order = window.appState.orders.find(o => o.id === orderId);
+            if (!order) return;
+            order.status = newStatus;
+            renderAll();
+            showToast('Đã cập nhật trạng thái', `Đơn ${orderId} chuyển sang: ${newStatus}`);
+            await syncOrderToCloud(order);
+        };
+
+        window.updateOrderPrice = async function(orderId, newPrice) {
+            const order = window.appState.orders.find(o => o.id === orderId);
+            if (!order) return;
+            order.price = Number(newPrice) || 0;
+            renderAll();
+            showToast('Đã lưu giá cước', `Đơn ${orderId}: ${formatVND(order.price)}`);
+            await syncOrderToCloud(order);
+        };
+
+        window.deleteOrder = async function(orderId) {
+            window.appState.orders = window.appState.orders.filter(o => o.id !== orderId);
+            renderAll();
+            showToast('Đã xóa đơn hàng', `Đã xóa đơn ${orderId} khỏi danh sách.`);
+            if (db && currentUser) {
+                try {
+                    await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'orders', orderId));
+                } catch (e) {}
+            }
+        };
+
+        window.createSampleOrder = async function() {
+            const samples = [
+                { name: 'Cty Xây Dựng Cầu Đường Vĩnh Long', phone: '0939112233', type: 'Cẩu & chở cọc bê tông / ống cống (Xe 71C-044.91)', route: 'Phú Tân, Vĩnh Long → Bến Tre', note: 'Cẩu 12 ống cống bê tông cốt thép giao tận công trình.' },
+                { name: 'Anh Tuấn - Xưởng Cơ Khí', phone: '0908445566', type: 'Thuê xe đầu kéo gắn cẩu tự hành', route: 'TP.HCM → KCN Hòa Phú, Vĩnh Long', note: 'Vận chuyển kết cấu khung kèo thép và máy công trình.' }
+            ];
+            const pick = samples[Math.floor(Math.random() * samples.length)];
+            const orderId = 'LH-' + Math.floor(1000 + Math.random() * 9000);
+            const newOrder = {
+                id: orderId,
+                createdAt: Date.now(),
+                timeStr: 'Vừa xong',
+                name: pick.name,
+                phone: pick.phone,
+                type: pick.type,
+                route: pick.route,
+                note: pick.note,
+                price: 5500000,
+                status: 'Mới'
+            };
+            window.appState.orders.unshift(newOrder);
+            playNotificationBell();
+            renderAll();
+            showToast('Đơn thử nghiệm mới!', `Đã tạo đơn ${orderId} từ "${pick.name}".`);
+            await syncOrderToCloud(newOrder);
+        };
+
+        window.openManualOrderModal = function() {
+            document.getElementById('manual-order-modal').classList.remove('hidden');
+        };
+        window.closeManualOrderModal = function() {
+            document.getElementById('manual-order-modal').classList.add('hidden');
+        };
+
+        window.submitManualOrder = async function(event) {
+            event.preventDefault();
+            const orderId = 'LH-' + Math.floor(1000 + Math.random() * 9000);
+            const newOrder = {
+                id: orderId,
+                createdAt: Date.now(),
+                timeStr: 'Khách gọi điện',
+                name: document.getElementById('m-name').value.trim(),
+                phone: document.getElementById('m-phone').value.trim(),
+                type: document.getElementById('m-type').value.trim(),
+                route: document.getElementById('m-route').value.trim(),
+                note: 'Ghi nhận qua Hotline Giám đốc Lê Thanh Nhã',
+                price: Number(document.getElementById('m-price').value) || 0,
+                status: 'Đã báo giá'
+            };
+            window.appState.orders.unshift(newOrder);
+            closeManualOrderModal();
+            renderAll();
+            showToast('Đã thêm đơn hàng!', `Đơn ${orderId} đã được lưu vào bảng quản lý.`);
+            await syncOrderToCloud(newOrder);
+        };
+
+        window.exportOrdersCSV = function() {
+            const headers = ['Ma Don', 'Thoi Gian', 'Khach Hang', 'SDT', 'Dich Vu', 'Tuyen Duong', 'Gia Cuoc (VND)', 'Trang Thai'];
+            const rows = window.appState.orders.map(o => [
+                o.id,
+                `"${o.timeStr || ''}"`,
+                `"${o.name || ''}"`,
+                `"${o.phone || ''}"`,
+                `"${o.type || ''}"`,
+                `"${o.route || ''}"`,
+                o.price || 0,
+                `"${o.status || ''}"`
+            ]);
+            const csvContent = '\uFEFF' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `DonHang_LeHoangLogistics_MST1301102656.csv`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            showToast('Đã xuất file Excel (CSV)!', 'Danh sách đơn hàng vận tải Lê Hoàng đã được tải về máy.');
+        };
+
+        // Admin Fleet Actions
+        window.updateVehicleStatus = async function(vId, status) {
+            const v = window.appState.fleet.find(item => item.id === vId);
+            if (!v) return;
+            v.status = status;
+            renderAll();
+            showToast('Đồng bộ Đội xe!', `Xe ${v.plate} đã cập nhật: "${status}" trên Trang chủ.`);
+            await syncFleetToCloud(v);
+        };
+
+        window.updateVehicleLocation = async function(vId) {
+            const v = window.appState.fleet.find(item => item.id === vId);
+            const input = document.getElementById(`loc-${vId}`);
+            if (!v || !input) return;
+            v.location = input.value.trim() || 'Vĩnh Long';
+            renderAll();
+            showToast('Đã cập nhật vị trí xe!', `Xe ${v.plate}: ${v.location}`);
+            await syncFleetToCloud(v);
+        };
+
+        window.openAddVehicleModal = function() {
+            document.getElementById('add-vehicle-modal').classList.remove('hidden');
+        };
+        window.closeAddVehicleModal = function() {
+            document.getElementById('add-vehicle-modal').classList.add('hidden');
+        };
+
+        window.submitNewVehicle = async function(event) {
+            event.preventDefault();
+            const newV = {
+                id: 'xe-' + Date.now(),
+                name: document.getElementById('v-name').value.trim(),
+                plate: document.getElementById('v-plate').value.trim().toUpperCase(),
+                capacity: document.getElementById('v-capacity').value.trim(),
+                location: document.getElementById('v-location').value.trim(),
+                status: 'Sẵn sàng nhận chuyến',
+                highlight: 'Chuyên vận tải & cẩu hàng hóa công trình khu vực Miền Nam'
+            };
+            window.appState.fleet.push(newV);
+            closeAddVehicleModal();
+            renderAll();
+            showToast('Đã thêm phương tiện!', `Xe ${newV.plate} đã hiển thị trên Trang chủ.`);
+            await syncFleetToCloud(newV);
+        };
+
+        window.removeVehicle = async function(vId) {
+            window.appState.fleet = window.appState.fleet.filter(v => v.id !== vId);
+            renderAll();
+            showToast('Đã xóa phương tiện', 'Đã cập nhật lại danh sách đội xe.');
+            if (db && currentUser) {
+                try {
+                    await deleteDoc(doc(db, 'artifacts', appId, 'public', 'data', 'fleet', vId));
+                } catch (e) {}
+            }
+        };
+
+        // Live CMS Save
+        window.saveCmsSettings = async function(event) {
+            event.preventDefault();
+            window.appState.cms = {
+                announcement: document.getElementById('cms-input-announcement').value.trim(),
+                director: document.getElementById('cms-input-director').value.trim(),
+                taxId: document.getElementById('cms-input-taxid').value.trim() || '1301102656',
+                slogan: document.getElementById('cms-input-slogan').value.trim() || 'Gửi Trọn Niềm Tin',
+                bookingStatus: document.getElementById('cms-input-status').value,
+                phone1: document.getElementById('cms-input-phone1').value.trim(),
+                phone2: document.getElementById('cms-input-phone2').value.trim(),
+                address: document.getElementById('cms-input-address').value.trim()
+            };
+            renderAll();
+            showToast('Đã cập nhật Website!', 'Mọi thay đổi trong Live CMS đã hiển thị ngay ngoài Trang chủ (/).');
+            if (db && currentUser) {
+                try {
+                    await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'cms_settings', 'main'), window.appState.cms);
+                } catch (e) {}
+            }
+        };
+
+        // -------------------------------------------------------------------
+        // 5. FIREBASE FIRESTORE CLOUD SYNC (Strict Rules 1, 2, 3)
+        // -------------------------------------------------------------------
+        async function syncOrderToCloud(orderObj) {
+            if (!db || !currentUser) return;
+            try {
+                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'orders', orderObj.id), orderObj);
+            } catch (e) {}
+        }
+
+        async function syncFleetToCloud(vehicleObj) {
+            if (!db || !currentUser) return;
+            try {
+                await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'fleet', vehicleObj.id), vehicleObj);
+            } catch (e) {}
+        }
+
+        async function initFirebaseSync() {
+            try {
+                if (typeof __firebase_config === 'undefined' || !__firebase_config) {
+                    document.getElementById('admin-user-id-display').textContent = 'Chế độ Trực tiếp Phiên hiện tại (Sẵn sàng 100%)';
+                    return;
+                }
+                const firebaseConfig = JSON.parse(__firebase_config);
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+
+                // RULE 3: Auth Before Queries
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                currentUser = auth.currentUser;
+                if (!currentUser) return;
+
+                const uidEl = document.getElementById('admin-user-id-display');
+                if (uidEl) uidEl.textContent = currentUser.uid;
+
+                // RULE 1 & 2: Simple collection queries on strict paths + error callbacks
+                const ordersCol = collection(db, 'artifacts', appId, 'public', 'data', 'orders');
+                onSnapshot(ordersCol, (snap) => {
+                    if (!snap.empty) {
+                        const cloudOrders = [];
+                        snap.forEach(d => cloudOrders.push(d.data()));
+                        window.appState.orders = cloudOrders;
+                        renderAll();
+                    } else {
+                        // Seed initial orders to cloud
+                        window.appState.orders.forEach(o => syncOrderToCloud(o));
+                    }
+                }, (err) => {
+                    console.warn('Firestore orders listener fallback:', err);
+                });
+
+                const fleetCol = collection(db, 'artifacts', appId, 'public', 'data', 'fleet');
+                onSnapshot(fleetCol, (snap) => {
+                    if (!snap.empty) {
+                        const cloudFleet = [];
+                        snap.forEach(d => cloudFleet.push(d.data()));
+                        window.appState.fleet = cloudFleet;
+                        renderAll();
+                    } else {
+                        window.appState.fleet.forEach(v => syncFleetToCloud(v));
+                    }
+                }, (err) => {
+                    console.warn('Firestore fleet listener fallback:', err);
+                });
+
+                const cmsDoc = doc(db, 'artifacts', appId, 'public', 'data', 'cms_settings', 'main');
+                onSnapshot(cmsDoc, (snap) => {
+                    if (snap.exists()) {
+                        window.appState.cms = { ...window.appState.cms, ...snap.data() };
+                        renderAll();
+                    }
+                }, (err) => {
+                    console.warn('Firestore CMS listener fallback:', err);
+                });
+            } catch (e) {
+                console.warn('Firebase sync fallback to local state:', e);
+                const uidEl = document.getElementById('admin-user-id-display');
+                if (uidEl) uidEl.textContent = 'Chế độ Trực tiếp Phiên hiện tại (Sẵn sàng 100%)';
+            }
+        }
+
+        // Initialize UI, Route Listener and start cloud sync on load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadSavedAuthSession();
+            renderAll();
+            initFirebaseSync();
+
+            // Check initial URL hash or path for /admin
+            if (window.location.hash === '#/admin' || window.location.pathname.endsWith('/admin')) {
+                navigateToRoute('/admin');
+            }
+
+            window.addEventListener('hashchange', () => {
+                if (window.location.hash === '#/admin') {
+                    navigateToRoute('/admin');
+                } else if (window.location.hash === '#/' || window.location.hash === '') {
+                    navigateToRoute('/');
+                }
+            });
+        });
+    </script>
+
+    <!-- UI HELPER SCRIPTS -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        function showToast(title, message) {
+            const toast = document.getElementById('toast-box');
+            document.getElementById('toast-title').textContent = title;
+            document.getElementById('toast-message').textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4500);
+        }
+
+        function copyText(text, successMsg) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+                showToast('Đã sao chép!', successMsg);
+            } catch (err) {
+                showToast('Thông tin', text);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function openImageCustomizer() {
+            document.getElementById('image-modal').classList.remove('hidden');
+        }
+        function closeImageCustomizer() {
+            document.getElementById('image-modal').classList.add('hidden');
+        }
+
+        function updateTruckImage(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const dataUrl = e.target.result;
+                document.documentElement.style.setProperty('--truck-bg-url', `url('${dataUrl}')`);
+                document.querySelectorAll('.custom-truck-img').forEach(img => {
+                    img.src = dataUrl;
+                    img.style.display = 'block';
+                });
+                const fallback = document.getElementById('about-truck-fallback');
+                if (fallback) fallback.classList.add('hidden');
+                showToast('Cập nhật thành công!', 'Đã áp dụng hình nền chiếc xe đầu kéo cẩu mới.');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function updateLogoImage(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const dataUrl = e.target.result;
+                document.querySelectorAll('.custom-logo-img').forEach(img => {
+                    img.src = dataUrl;
+                    img.style.display = 'block';
+                    if (img.nextElementSibling && img.nextElementSibling.tagName.toLowerCase() === 'svg') {
+                        img.nextElementSibling.classList.add('hidden');
+                    }
+                });
+                const heroFallback = document.getElementById('hero-svg-logo-fallback');
+                if (heroFallback) heroFallback.classList.add('hidden');
+                showToast('Cập nhật thành công!', 'Đã áp dụng hình Logo Lê Hoàng mới.');
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
